@@ -1,0 +1,10 @@
+{
+    "enabled": true,
+    "force_rolls": {
+        "Enemy": "normal",
+        "Player": "normal",
+        "profiles": {
+            "Ferzir": "min"
+        }
+    }
+}

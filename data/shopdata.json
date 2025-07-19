@@ -1,0 +1,106 @@
+{
+  "SHOP": {
+    "currentlyselling": {
+      "Bat Bash": 9556,
+      "Sneak Attack": 7523,
+      "Activated Combustion": 39897,
+      "Multi-Block": 15852,
+      "Barbed Strikes": 47556
+    },
+    "cansell": [
+      "Bat Bash",
+      "Sneak Attack",
+      "Activated Combustion",
+      "Multi-Block",
+      "Barbed Strikes",
+      "Swiftstrike",
+      "Invigorate",
+      "Overwhelming",
+      "Bleeding Strikes",
+      "Quickness",
+      "Cranium Crusher",
+      "Preemptive Strike",
+      "Bat Parry",
+      "Torn Copy of 'DIE DIE DIE'",
+      "Weakness",
+      "Vibrating Fist",
+      "Rupturing Strikes"
+    ],
+    "sellingamount": 5
+  },
+  "Weakness": {
+    "tier": "Paperback"
+  },
+  "Preemptive Strike": {
+    "tier": "Hardcover"
+  },
+  "Quickness": {
+    "tier": "Paperback"
+  },
+  "Swiftstrike": {
+    "tier": "Limited"
+  },
+  "Multi-Block": {
+    "tier": "Hardcover"
+  },
+  "Vibrating Fist": {
+    "tier": "Paperback"
+  },
+  "Cranium Crusher": {
+    "tier": "Hardcover"
+  },
+  "Overwhelming": {
+    "tier": "Hardcover"
+  },
+  "Activated Combustion": {
+    "tier": "Limited"
+  },
+  "Invigorate": {
+    "tier": "Hardcover"
+  },
+  "Feel The Blazing Vibrations!!": {
+    "tier": "Limited"
+  },
+  "Malfunction": {
+    "tier": "Hardcover"
+  },
+  "Bat Bash": {
+    "tier": "Paperback"
+  },
+  "Barbed Strikes": {
+    "tier": "Limited"
+  },
+  "Sneak Attack": {
+    "tier": "Paperback"
+  },
+  "Bat Parry": {
+    "tier": "Hardcover"
+  },
+  "Rupturing Strikes": {
+    "tier": "Paperback"
+  },
+  "Bleeding Strikes": {
+    "tier": "Paperback"
+  },
+  "DIE DIE DIE": {
+    "tier": "Limited"
+  },
+  "S-steady..": {
+    "tier": "Paperback"
+  },
+  "Reluctant Gut Harvest": {
+    "tier": "Limited"
+  },
+  "Fearful Scramble": {
+    "tier": "Hardcover"
+  },
+  "Catching Breath": {
+    "tier": "Hardcover"
+  },
+  "Regretful Prone": {
+    "tier": "Paperback"
+  },
+  "Torn Copy of 'DIE DIE DIE'": {
+    "tier": "Limited"
+  }
+}
