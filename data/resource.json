@@ -1,0 +1,46 @@
+{
+    "Player": {
+        "Wrath": 0,
+        "Lust": 0,
+        "Sloth": 0,
+        "Gluttony": 0,
+        "Gloom": 0,
+        "Pride": 0,
+        "Envy": 0,
+        "White": 0,
+        "Black": 0
+    },
+    "Enemy": {
+        "Wrath": 0,
+        "Lust": 0,
+        "Sloth": 0,
+        "Gluttony": 0,
+        "Gloom": 0,
+        "Pride": 0,
+        "Envy": 0,
+        "White": 0,
+        "Black": 0
+    },
+    "ResPlayer": {
+        "Wrath": 0,
+        "Lust": 0,
+        "Sloth": 0,
+        "Gluttony": 0,
+        "Gloom": 0,
+        "Pride": 0,
+        "Envy": 0,
+        "White": 0,
+        "Black": 0
+    },
+    "ResEnemy": {
+        "Wrath": 0,
+        "Lust": 0,
+        "Sloth": 0,
+        "Gluttony": 0,
+        "Gloom": 0,
+        "Pride": 0,
+        "Envy": 0,
+        "White": 0,
+        "Black": 0
+    }
+}

@@ -1,0 +1,426 @@
+{
+    "SHOP": {
+        "currentlyselling": {
+            "Unadulterated Slaughter": 24918,
+            "YAGAWT": 16019,
+            "Judo Flip": 23281,
+            "Preemptive Strike": 23245,
+            "Set Fire": 19277,
+            "Subprimal Finish": 38532,
+            "Time for a Little Test": 5284,
+            "Smackdown": 26950,
+            "Butcher Cleave": 9348,
+            "Pride as a Chef": 22309
+        },
+        "cansell": [
+            "Unadulterated Slaughter",
+            "YAGAWT",
+            "Judo Flip",
+            "Preemptive Strike",
+            "Set Fire",
+            "Subprimal Finish",
+            "Time for a Little Test",
+            "Smackdown",
+            "Butcher Cleave",
+            "Pride as a Chef",
+            "Coupled Mutilation",
+            "Cranium Crusher",
+            "Bleeding Strikes",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "It's time to get SERIOUS",
+            "Dynamite Rave",
+            "Sneak Attack",
+            "Makeshift Blitz",
+            "Goin' First",
+            "Meat Injection",
+            "Circuits Unsundered",
+            "Commandeering",
+            "Redirection",
+            "Death From Above",
+            "Overwhelming",
+            "Quickness",
+            "Beat Em Up",
+            "Suppressing",
+            "Powered in his Likeship",
+            "Bloodlusted Massacre",
+            "Diagonal Rend [倍増]",
+            "Feel The Blazing Vibrations!!",
+            "Through the Night",
+            "Warm Embrace",
+            "Frantic Maelstrom",
+            "Weakness",
+            "Awful Contemplation",
+            "Traces of Heat",
+            "Dustlunge",
+            "Faulty Equipment",
+            "Riddle Holes [刺す]",
+            "Goin’ First",
+            "Nightlong",
+            "Lunge Through",
+            "Struggle",
+            "Ashes to Ashes",
+            "Fistful O Buckshot",
+            "COUP DE GRACE",
+            "This Will Be Easy",
+            "Multi-Block",
+            "Invigorate",
+            "You're Too Slow",
+            "Bat Parry",
+            "Torn Copy of 'DIE DIE DIE'",
+            "Swiftstrike",
+            "Vibrating Fist",
+            "Rupturing Strikes",
+            "Fists Of Strife",
+            "Volley of Arrows",
+            "Fierce Flames",
+            "Quiver Smack",
+            "Bat Bash",
+            "Kick Feint",
+            "Musket Fire",
+            "Drawstring",
+            "Footwork",
+            "D-dried Up",
+            "Gather Intel",
+            "Burn Up",
+            "Suppressing Volley",
+            "Martial Scuffle",
+            "Headband Toss",
+            "The Warmup",
+            "Load em Up",
+            "Feelin’ Good",
+            "Demolish",
+            "Overcharger",
+            "Activated Combustion",
+            "Barbed Strikes",
+            "Ferrous Guard",
+            "Exploit Shortcomings",
+            "One Guard [奥深い]",
+            "Tendon Piercer",
+            "Preparation",
+            "Overheating",
+            "Ready for Duel [一騎打ち]",
+            "Order Fire",
+            "Rifle Puncture",
+            "Moisture Retention",
+            "Deceitful Brawl",
+            "Engulf"
+        ],
+        "sellingamount": 10
+    },
+    "Tendon Piercer": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Frantic Maelstrom": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Drawstring": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Death From Above": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Volley of Arrows": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Quiver Smack": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Lunge Through": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Exploit Shortcomings": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Through the Night": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Dustlunge": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Nightlong": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Set Fire": {
+        "tier": "Hardcover"
+    },
+    "D-dried Up": {
+        "tier": "Paperback"
+    },
+    "You're Too Slow": {
+        "tier": "Hardcover"
+    },
+    "Commandeering": {
+        "tier": "Limited"
+    },
+    "Struggle": {
+        "tier": "Limited"
+    },
+    "Demolish": {
+        "tier": "Hardcover"
+    },
+    "Preparation": {
+        "tier": "Paperback"
+    },
+    "Feelin’ Good": {
+        "tier": "Hardcover"
+    },
+    "Time for a Little Test": {
+        "tier": "Paperback"
+    },
+    "Goin’ First": {
+        "tier": "Paperback"
+    },
+    "Bloodlusted Massacre": {
+        "tier": "Limited"
+    },
+    "Coupled Mutilation": {
+        "tier": "Hardcover"
+    },
+    "Footwork": {
+        "tier": "Hardcover"
+    },
+    "Redirection": {
+        "tier": "Paperback"
+    },
+    "Gather Intel": {
+        "tier": "Paperback"
+    },
+    "Awful Contemplation": {
+        "tier": "Hardcover"
+    },
+    "Suppressing": {
+        "tier": "Hardcover"
+    },
+    "Weakness": {
+        "tier": "Paperback"
+    },
+    "Preemptive Strike": {
+        "tier": "Hardcover"
+    },
+    "Quickness": {
+        "tier": "Paperback"
+    },
+    "Swiftstrike": {
+        "tier": "Limited"
+    },
+    "Multi-Block": {
+        "tier": "Hardcover"
+    },
+    "Vibrating Fist": {
+        "tier": "Paperback"
+    },
+    "Cranium Crusher": {
+        "tier": "Hardcover"
+    },
+    "Overwhelming": {
+        "tier": "Hardcover"
+    },
+    "Activated Combustion": {
+        "tier": "Limited"
+    },
+    "Invigorate": {
+        "tier": "Hardcover"
+    },
+    "Feel The Blazing Vibrations!!": {
+        "tier": "Limited"
+    },
+    "Malfunction": {
+        "tier": "Hardcover"
+    },
+    "Bat Bash": {
+        "tier": "Paperback"
+    },
+    "Barbed Strikes": {
+        "tier": "Limited"
+    },
+    "Sneak Attack": {
+        "tier": "Paperback"
+    },
+    "Bat Parry": {
+        "tier": "Hardcover"
+    },
+    "Rupturing Strikes": {
+        "tier": "Paperback"
+    },
+    "Bleeding Strikes": {
+        "tier": "Paperback"
+    },
+    "DIE DIE DIE": {
+        "tier": "Limited"
+    },
+    "S-steady..": {
+        "tier": "Paperback"
+    },
+    "Reluctant Gut Harvest": {
+        "tier": "Limited"
+    },
+    "Fearful Scramble": {
+        "tier": "Hardcover"
+    },
+    "Catching Breath": {
+        "tier": "Hardcover"
+    },
+    "Regretful Prone": {
+        "tier": "Paperback"
+    },
+    "Torn Copy of 'DIE DIE DIE'": {
+        "tier": "Limited"
+    },
+    "Butcher Cleave": {
+        "tier": "Paperback"
+    },
+    "Unadulterated Slaughter": {
+        "tier": "Hardcover"
+    },
+    "Meat Injection": {
+        "tier": "Limited"
+    },
+    "Moisture Retention": {
+        "tier": "Limited"
+    },
+    "Subprimal Finish": {
+        "tier": "Limited"
+    },
+    "Pride as a Chef": {
+        "tier": "Hardcover"
+    },
+    "Silent Cutter": {
+        "tier": "Paperback"
+    },
+    "Powered in his Likeship": {
+        "tier": "Paperback"
+    },
+    "Deceitful Brawl": {
+        "tier": "Paperback"
+    },
+    "Faulty Equipment": {
+        "tier": "Hardcover"
+    },
+    "Makeshift Blitz": {
+        "tier": "Hardcover"
+    },
+    "Overcharger": {
+        "tier": "Hardcover"
+    },
+    "Dynamite Rave": {
+        "tier": "Limited"
+    },
+    "Circuits Unsundered": {
+        "tier": "Limited"
+    },
+    "Warm Embrace": {
+        "tier": "Paperback"
+    },
+    "Overheating": {
+        "tier": "Hardcover"
+    },
+    "Burn Up": {
+        "tier": "Paperback"
+    },
+    "Fierce Flames": {
+        "tier": "Paperback"
+    },
+    "Traces of Heat": {
+        "tier": "Hardcover"
+    },
+    "Engulf": {
+        "tier": "Hardcover"
+    },
+    "Ashes to Ashes": {
+        "tier": "Limited"
+    },
+    "Load em Up": {
+        "tier": "Hardcover"
+    },
+    "The Warmup": {
+        "tier": "Hardcover"
+    },
+    "This Will Be Easy": {
+        "tier": "Hardcover"
+    },
+    "Beat Em Up": {
+        "tier": "Limited"
+    },
+    "YAGAWT": {
+        "tier": "Hardcover"
+    },
+    "Fists Of Strife": {
+        "tier": "Limited"
+    },
+    "Fistful O Buckshot": {
+        "tier": "Limited"
+    },
+    "Kick Feint": {
+        "tier": "Paperback"
+    },
+    "Martial Scuffle": {
+        "tier": "Paperback"
+    },
+    "Judo Flip": {
+        "tier": "Hardcover"
+    },
+    "Headband Toss": {
+        "tier": "Paperback"
+    },
+    "It's time to get SERIOUS": {
+        "tier": "Hardcover"
+    },
+    "COUP DE GRACE": {
+        "tier": "Limited"
+    },
+    "Draw of the Sword - Vaiśravaṇa Style [切れ]": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Riddle Holes [刺す]": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Ready for Duel [一騎打ち]": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Diagonal Rend [倍増]": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "One Guard [奥深い]": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Rifle Puncture": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Ferrous Guard": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Musket Fire": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Smackdown": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Suppressing Volley": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Order Fire": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    }
+}

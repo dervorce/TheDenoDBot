@@ -1,0 +1,1634 @@
+{
+    "Preludio": {
+        "description": "",
+        "light_cost": 5,
+        "effects": [
+            {
+                "trigger": "on_use",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "stack": 20,
+                            "count": 2
+                        }
+                    }
+                }
+            }
+        ],
+        "dice": [
+            {
+                "type": "guard",
+                "min": 4,
+                "max": 8,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "takestaggerdamage": 5000000
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "guard",
+                "min": 3,
+                "max": 9,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {
+                            "damagedealt": 100
+                        },
+                        "modifiers": {
+                            "takestaggerdamage": "damagedealt"
+                        }
+                    },
+                    {
+                        "trigger": "on_crit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "getbuff": {
+                                "Haste": {
+                                    "stack": 10,
+                                    "nextturn": true,
+                                    "volatile": true
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": [],
+        "globalpower": []
+    },
+    "GET AWAY": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "type": "evade",
+                "min": 3,
+                "max": 6,
+                "sin": "Sloth",
+                "effects": []
+            }
+        ],
+        "pageTagList": []
+    },
+    "I WILL NOT LET YOU DESTROY MY OFFICE!!": {
+        "description": "",
+        "light_cost": 10,
+        "attackweight": 3,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 15,
+                "sin": "Wrath",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 15,
+                "sin": "Wrath",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 15,
+                "sin": "Wrath",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 15,
+                "sin": "Wrath",
+                "effects": []
+            },
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 15,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "takehpdamage": 1
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "DIVINE POLAR LIGHT": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 200,
+                "max": 200,
+                "sin": "Wrath",
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "polarize": [
+                                "hp"
+                            ],
+                            "takehpdamage": 1
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Sacrilegious Rend [通路]": {
+        "description": "",
+        "light_cost": 2,
+        "attackweight": 2,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 25,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 13,
+                "max": 29,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Rite of Judgement [正義の裂け目]": {
+        "description": "",
+        "light_cost": 4,
+        "attackweight": 2,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 30,
+                "max": 30,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 30,
+                "max": 30,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Refracted Sacrilegious Rend [通路]": {
+        "description": "",
+        "light_cost": 2,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 10,
+                "max": 20,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 8,
+                "max": 29,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Refracted Rite of Judgement [正義の裂け目]": {
+        "description": "",
+        "light_cost": 6,
+        "attackweight": 3,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 7,
+                "max": 25,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "slash",
+                "min": 7,
+                "max": 25,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Refracted Silent Execution [無声の斬首]": {
+        "description": "",
+        "light_cost": 1,
+        "effects": [],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 8,
+                "max": 19,
+                "sin": "Lust",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 8,
+                "max": 19,
+                "sin": "Lust",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 8,
+                "max": 16,
+                "sin": "Lust",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Refracted Echo of Severance [断絶の残響]": {
+        "description": "",
+        "light_cost": 6,
+        "effects": [],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 9,
+                "max": 15,
+                "sin": "Wrath",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 9,
+                "max": 15,
+                "sin": "Wrath",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 9,
+                "max": 15,
+                "sin": "Wrath",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 9,
+                "max": 15,
+                "sin": "Wrath",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Refracted Bloodlit Mandate [血灯の勅命]": {
+        "description": "",
+        "light_cost": 7,
+        "attackweight": 1,
+        "effects": [],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 13,
+                "max": 23,
+                "sin": "Wrath",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "blunt",
+                "min": 9,
+                "max": 23,
+                "sin": "Wrath",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Executioner of Aurafarmers": {
+        "description": "",
+        "light_cost": 4,
+        "attackweight": 2,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 300,
+                "max": 300,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "SUPER JEREMY FIXER SLASH": {
+        "description": "",
+        "light_cost": 4,
+        "attackweight": 6,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 300,
+                "max": 300,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "SHTOOOOOP!!!": {
+        "description": "",
+        "light_cost": 4,
+        "attackweight": 10,
+        "effects": [],
+        "dice": [
+            {
+                "type": "slash",
+                "min": 300,
+                "max": 300,
+                "sin": "Pride",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                },
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Gun Shot of the Hood": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 10,
+                "max": 10,
+                "sin": "Sloth",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 10,
+                "max": 10,
+                "sin": "Sloth",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "pierce",
+                "min": 10,
+                "max": 10,
+                "sin": "Sloth",
+                "hidden": false,
+                "effects": [
+                    {
+                        "trigger": "on_hit",
+                        "conditionTarget": "self",
+                        "modifierTarget": "target",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "log": [
+                                {
+                                    "text": "Unobservable Effects"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ],
+        "pageTagList": []
+    },
+    "Hail": {
+        "description": "",
+        "light_cost": 0,
+        "effects": [],
+        "dice": [
+            {
+                "type": "pierce",
+                "min": 1,
+                "max": 1,
+                "sin": "Gloom",
+                "effects": [
+                    {
+                        "trigger": "on_roll",
+                        "conditionTarget": "self",
+                        "modifierTarget": "self",
+                        "condition": {},
+                        "get": {},
+                        "modifiers": {
+                            "setpower": 1
+                        }
+                    }
+                ]
+            }
+        ],
+        "globalpower": [],
+        "pageTagList": []
+    }
+}
