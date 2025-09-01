@@ -1,0 +1,51 @@
+[
+    {
+        "actor": "Dummy",
+        "actorpage": "Nothing",
+        "target": "Nobody",
+        "selfslot": 1,
+        "targetslot": -1,
+        "mode": "Nothing"
+    },
+    {
+        "actor": "Jeremy The Green Jeremy",
+        "actorpage": "SHTOOOOOP!!!",
+        "target": "Nabi",
+        "selfslot": 1,
+        "targetslot": 1,
+        "ogtarget": "Nabi",
+        "mode": "Unopposed"
+    },
+    {
+        "actor": "Jeremy The Green Jeremy",
+        "actorpage": "Nothing",
+        "target": "Nobody",
+        "selfslot": 2,
+        "targetslot": -1,
+        "mode": "Nothing"
+    },
+    {
+        "actor": "Jeremy The Green Jeremy",
+        "actorpage": "Nothing",
+        "target": "Nobody",
+        "selfslot": 3,
+        "targetslot": -1,
+        "mode": "Nothing"
+    },
+    {
+        "actor": "Jeremy The Green Jeremy",
+        "actorpage": "Nothing",
+        "target": "Nobody",
+        "selfslot": 4,
+        "targetslot": -1,
+        "mode": "Nothing"
+    },
+    {
+        "actor": "Jeremy The Green Jeremy",
+        "actorpage": "Nothing",
+        "target": "Nobody",
+        "selfslot": 5,
+        "targetslot": -1,
+        "mode": "Nothing"
+    }
+]

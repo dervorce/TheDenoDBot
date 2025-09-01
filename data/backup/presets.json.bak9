@@ -1,0 +1,374 @@
+{
+    "J-Blupture": {
+        "pages": [
+            "Bat Parry",
+            "Bat Parry",
+            "Multi-Block",
+            "Bat Bash",
+            "Bat Bash",
+            "Barbed Strikes",
+            "Rupturing Strikes",
+            "Bat Bash",
+            "Barbed Strikes"
+        ],
+        "creator": 744293019901231158
+    },
+    "J-Haste": {
+        "pages": [
+            "Bat Parry",
+            "Bat Parry",
+            "Quickness",
+            "Quickness",
+            "Light Defense",
+            "Bat Bash",
+            "Bat Bash",
+            "Preemptive Strike",
+            "Swiftstrike"
+        ],
+        "creator": 744293019901231158
+    },
+    "J-Bleed": {
+        "pages": [
+            "Bat Parry",
+            "Bat Parry",
+            "Pride as a Chef",
+            "Bat Bash",
+            "Bat Bash",
+            "Bat Bash",
+            "Unadulterated Slaughter",
+            "Barbed Strikes",
+            "Torn Copy of 'DIE DIE DIE'"
+        ],
+        "creator": 744293019901231158
+    },
+    "PRIDE AS A CHEF": {
+        "pages": [
+            "Meat Injection",
+            "Pride as a Chef",
+            "Pride as a Chef",
+            "Unadulterated Slaughter",
+            "Pride as a Chef",
+            "Bat Bash",
+            "Bat Bash",
+            "Unadulterated Slaughter",
+            "Bat Bash"
+        ],
+        "creator": 296378053016420352
+    },
+    "J-Burn": {
+        "pages": [
+            "Overheating",
+            "Overheating",
+            "Fierce Flames",
+            "Fierce Flames",
+            "Engulf",
+            "Warm Embrace",
+            "Warm Embrace",
+            "Burn Up",
+            "Burn Up"
+        ],
+        "creator": 744293019901231158
+    },
+    "Poise-Shu": {
+        "pages": [
+            "Headband Toss",
+            "Headband Toss",
+            "It's time to get SERIOUS",
+            "It's time to get SERIOUS",
+            "COUP DE GRACE",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Judo Flip",
+            "Judo Flip"
+        ],
+        "creator": 952246430364491796
+    },
+    "J-Charge": {
+        "pages": [
+            "Overcharger",
+            "Overcharger",
+            "Makeshift Blitz",
+            "Makeshift Blitz",
+            "Circuits Unsundered",
+            "D-dried Up",
+            "D-dried Up",
+            "Faulty Equipment",
+            "Faulty Equipment"
+        ],
+        "creator": 744293019901231158
+    },
+    "Len-Charge": {
+        "pages": [
+            "Powered in his Likeship",
+            "Powered in his Likeship",
+            "Powered in his Likeship",
+            "Deceitful Brawl",
+            "Deceitful Brawl",
+            "Makeshift Blitz",
+            "Dynamite Rave",
+            "Overcharger",
+            "Overcharger"
+        ],
+        "creator": 952246430364491796
+    },
+    "BladeswornPoise": {
+        "pages": [
+            "This Will Be Easy",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]",
+            "Riddle Holes [刺す]",
+            "Ready for Duel [一騎打ち]",
+            "Ready for Duel [一騎打ち]",
+            "This Will Be Easy"
+        ],
+        "creator": 286463112855420928
+    },
+    "Shu + Bladesworn Poise Drone": {
+        "pages": [
+            "Kick Feint",
+            "Kick Feint",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]",
+            "Riddle Holes [刺す]",
+            "Commandeering",
+            "Diagonal Rend [倍増]",
+            "Headband Toss",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]"
+        ],
+        "creator": 1375130091725783150
+    },
+    "Funny Bleed???": {
+        "pages": [
+            "Pride as a Chef",
+            "Pride as a Chef",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Torn Copy of 'DIE DIE DIE'",
+            "Bat Parry",
+            "Bat Bash",
+            "Bat Bash",
+            "Barbed Strikes",
+            "Pride as a Chef"
+        ],
+        "creator": 286463112855420928
+    },
+    "the deck mayu will use when the stats come into effect": {
+        "pages": [
+            "YAGAWT",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]",
+            "Smackdown",
+            "Smackdown",
+            "Order Fire",
+            "Fists Of Strife",
+            "This Will Be Easy",
+            "Load em Up"
+        ],
+        "creator": 296378053016420352
+    },
+    "super generic poise": {
+        "pages": [
+            "This Will Be Easy",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "This Will Be Easy",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]",
+            "YAGAWT",
+            "Smackdown",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Smackdown"
+        ],
+        "creator": 296378053016420352
+    },
+    "Gass or Ass": {
+        "pages": [
+            "This Will Be Easy",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]",
+            "Riddle Holes [刺す]",
+            "Ready for Duel [一騎打ち]",
+            "Smackdown",
+            "YAGAWT"
+        ],
+        "creator": 286463112855420928
+    },
+    "J-Tremor": {
+        "pages": [
+            "Vibrating Fist",
+            "Rifle Puncture",
+            "Rifle Puncture",
+            "Musket Fire",
+            "Musket Fire",
+            "Order Fire",
+            "Bat Parry",
+            "Bat Parry",
+            "Feel The Blazing Vibrations!!"
+        ],
+        "creator": 744293019901231158
+    },
+    "Poise": {
+        "pages": [],
+        "creator": 786263976489123841
+    },
+    "Sinking": {
+        "pages": [],
+        "creator": 786263976489123841
+    },
+    "Isaac - SeveredPalm": {
+        "pages": [
+            "Smackdown",
+            "Smackdown",
+            "Ferrous Guard",
+            "Ferrous Guard",
+            "Order Fire",
+            "Order Fire",
+            "Rifle Puncture",
+            "Suppressing Volley",
+            "Load em Up"
+        ],
+        "creator": 286463112855420928
+    },
+    "J-Poise": {
+        "pages": [
+            "This Will Be Easy",
+            "This Will Be Easy",
+            "Riddle Holes [刺す]",
+            "Riddle Holes [刺す]",
+            "YAGAWT",
+            "YAGAWT",
+            "Swiftstrike",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]"
+        ],
+        "creator": 744293019901231158
+    },
+    "win the game preset": {
+        "pages": [
+            "Load em Up",
+            "YAGAWT",
+            "Suppressing Volley",
+            "Order Fire",
+            "Musket Fire",
+            "Ferrous Guard",
+            "Smackdown",
+            "Fists Of Strife",
+            "Riddle Holes [刺す]"
+        ],
+        "creator": 296378053016420352
+    },
+    "Dardscard": {
+        "pages": [
+            "Rifle Puncture",
+            "Rifle Puncture",
+            "Rifle Puncture",
+            "Smackdown",
+            "Musket Fire",
+            "Musket Fire",
+            "Order Fire",
+            "Ferrous Guard",
+            "Suppressing Volley"
+        ],
+        "creator": 297821915387527168
+    },
+    "Beefcake Charg": {
+        "pages": [
+            "Makeshift Blitz",
+            "Makeshift Blitz",
+            "Circuits Unsundered",
+            "Deceitful Brawl",
+            "Dynamite Rave",
+            "This Will Be Easy",
+            "This Will Be Easy",
+            "Faulty Equipment",
+            "Overcharger"
+        ],
+        "creator": 297821915387527168
+    },
+    "J-Charge 2": {
+        "pages": [
+            "Overcharger",
+            "Overcharger",
+            "Makeshift Blitz",
+            "Makeshift Blitz",
+            "Circuits Unsundered",
+            "D-dried Up",
+            "D-dried Up",
+            "Faulty Equipment",
+            "Faulty Equipment"
+        ],
+        "creator": 744293019901231158
+    },
+    "potential build": {
+        "pages": [
+            "Quiver Smack",
+            "Quiver Smack",
+            "Drawstring",
+            "Death From Above",
+            "Frantic Maelstrom",
+            "Barbed Strikes",
+            "Torn Copy of 'DIE DIE DIE'",
+            "Pride as a Chef",
+            "Bloodlusted Massacre"
+        ],
+        "creator": 296378053016420352
+    },
+    "Bladesworn + Arrowedge": {
+        "pages": [
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Quiver Smack",
+            "Quiver Smack",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]",
+            "Drawstring",
+            "Death From Above",
+            "Frantic Maelstrom"
+        ],
+        "creator": 296378053016420352
+    },
+    "SmackdownDiscardCore": {
+        "pages": [
+            "YAGAWT",
+            "Smackdown",
+            "Smackdown",
+            "Smackdown",
+            "Rifle Puncture",
+            "Fistful O Buckshot",
+            "Load em Up",
+            "Ferrous Guard",
+            "Engulf"
+        ],
+        "creator": 286463112855420928
+    },
+    "J-Archer": {
+        "pages": [
+            "Quiver Smack",
+            "Quiver Smack",
+            "Quiver Smack",
+            "Frantic Maelstrom",
+            "Frantic Maelstrom",
+            "Drawstring",
+            "Drawstring",
+            "Drawstring",
+            "Suppressing Volley"
+        ],
+        "creator": 744293019901231158
+    },
+    "SmackdownDiscardCore 2": {
+        "pages": [
+            "YAGAWT",
+            "Smackdown",
+            "Smackdown",
+            "Smackdown",
+            "Smackdown",
+            "Smackdown",
+            "Fistful O Buckshot",
+            "Ferrous Guard",
+            "Subprimal Finish"
+        ],
+        "creator": 286463112855420928
+    }
+}

@@ -1,0 +1,4081 @@
+{
+    "Cass": {
+        "hp": 19,
+        "max_hp": 50,
+        "stagger": 24,
+        "max_stagger": 28,
+        "light": 2,
+        "light_gain": 1,
+        "max_light": 3,
+        "pages_drawn": 1,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 4,
+        "is_active": true,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "This Will Be Easy",
+            "This Will Be Easy",
+            "Bat Parry",
+            "Bat Parry",
+            "Overcharger",
+            "Overcharger",
+            "Makeshift Blitz",
+            "Faulty Equipment",
+            "This Will Be Easy"
+        ],
+        "hand": [
+            "Bat Parry",
+            "This Will Be Easy",
+            "This Will Be Easy",
+            "Bat Parry",
+            "This Will Be Easy",
+            "Makeshift Blitz",
+            "Overcharger",
+            "Overcharger"
+        ],
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "name": "Cass",
+        "_effect_limits": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Sean": {
+        "hp": 60,
+        "max_hp": 60,
+        "stagger": 35,
+        "max_stagger": 35,
+        "light": 0,
+        "light_gain": 0,
+        "max_light": 0,
+        "pages_drawn": 1,
+        "speed_min": 0,
+        "speed_max": 1,
+        "speed": 1,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Player"
+        ],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "GET AWAY",
+            "GET AWAY",
+            "GET AWAY",
+            "GET AWAY",
+            "GET AWAY",
+            "GET AWAY",
+            "GET AWAY",
+            "GET AWAY",
+            "GET AWAY"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 0.5,
+            "pierce": 0.5
+        },
+        "name": "Sean",
+        "_effect_limits": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Bloodthirsty Spinouse Syndicate Member 1": {
+        "hp": 45,
+        "max_hp": 45,
+        "stagger": 20,
+        "max_stagger": 20,
+        "light": 5,
+        "light_gain": 2,
+        "max_light": 5,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 2,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "Hematolagnia",
+            "Barbaric Terror"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Enemy",
+            "Spinouse Syndicate"
+        ],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Bat Bash",
+            "Bat Bash",
+            "Bat Bash",
+            "Barbed Strikes",
+            "Barbed Strikes",
+            "Sneak Attack",
+            "Bat Parry",
+            "Bat Parry",
+            "Bleeding Strikes"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "name": "Bloodthirsty Spinouse Syndicate Member 1",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Bloodthirsty Spinouse Syndicate Member 2": {
+        "hp": 45,
+        "max_hp": 45,
+        "stagger": 20,
+        "max_stagger": 20,
+        "light": 5,
+        "light_gain": 2,
+        "max_light": 5,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 5,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "Hematolagnia",
+            "Barbaric Terror"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Enemy",
+            "Spinouse Syndicate"
+        ],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Bat Bash",
+            "Bat Bash",
+            "Bat Bash",
+            "Barbed Strikes",
+            "Barbed Strikes",
+            "Sneak Attack",
+            "Bat Parry",
+            "Bat Parry",
+            "Bleeding Strikes"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "name": "Bloodthirsty Spinouse Syndicate Member 2",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Severing Spinouse Syndicate Member 1": {
+        "hp": 45,
+        "max_hp": 45,
+        "stagger": 20,
+        "max_stagger": 20,
+        "light": 5,
+        "light_gain": 2,
+        "max_light": 5,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 5,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "Acrotomophilia",
+            "Fear Inducing Terror"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Enemy",
+            "Spinouse Syndicate"
+        ],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0
+        },
+        "deck": [
+            "Bat Bash",
+            "Bat Bash",
+            "Bat Bash",
+            "Barbed Strikes",
+            "Barbed Strikes",
+            "Sneak Attack",
+            "Bat Parry",
+            "Bat Parry",
+            "Rupturing Strikes"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "name": "Severing Spinouse Syndicate Member 1",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Severing Spinouse Syndicate Member 2": {
+        "hp": 45,
+        "max_hp": 45,
+        "stagger": 20,
+        "max_stagger": 20,
+        "light": 5,
+        "light_gain": 2,
+        "max_light": 5,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 2,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "Acrotomophilia",
+            "Fear Inducing Terror"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Enemy",
+            "Spinouse Syndicate"
+        ],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0
+        },
+        "deck": [
+            "Bat Bash",
+            "Bat Bash",
+            "Bat Bash",
+            "Barbed Strikes",
+            "Barbed Strikes",
+            "Sneak Attack",
+            "Bat Parry",
+            "Bat Parry",
+            "Rupturing Strikes"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "name": "Severing Spinouse Syndicate Member 2",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Bankvorce": {
+        "hp": 1000000,
+        "max_hp": 1000000,
+        "stagger": 500,
+        "max_stagger": 500,
+        "light": 1000000,
+        "light_gain": 1000000,
+        "max_light": 1000000,
+        "pages_drawn": 10,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 7,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Player"
+        ],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [],
+        "hand": [],
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "name": "Bankvorce",
+        "_effect_limits": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "SturdyFixer1": {
+        "hp": 45,
+        "max_hp": 45,
+        "stagger": 35,
+        "max_stagger": 35,
+        "light": 4,
+        "light_gain": 1,
+        "max_light": 4,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 8,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Foolhardy"
+        ],
+        "faction": [
+            "Enemy"
+        ],
+        "evade_queue": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Multi-Block",
+            "Multi-Block",
+            "Multi-Block",
+            "Multi-Block",
+            "Quickness",
+            "Quickness",
+            "Weakness",
+            "Weakness",
+            "Weakness"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "name": "SturdyFixer1",
+        "_effect_limits_perm": {},
+        "_effect_limits": {},
+        "temphidden": []
+    },
+    "SturdyFixer2": {
+        "hp": 45,
+        "max_hp": 45,
+        "stagger": 35,
+        "max_stagger": 35,
+        "light": 4,
+        "light_gain": 1,
+        "max_light": 4,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 3,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Foolhardy"
+        ],
+        "faction": [
+            "Enemy"
+        ],
+        "evade_queue": [],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Multi-Block",
+            "Multi-Block",
+            "Multi-Block",
+            "Multi-Block",
+            "Quickness",
+            "Quickness",
+            "Weakness",
+            "Weakness",
+            "Weakness"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 2.0
+        },
+        "name": "SturdyFixer2",
+        "_effect_limits_perm": {},
+        "_effect_limits": {},
+        "temphidden": []
+    },
+    "SturdyFixer3": {
+        "hp": 750,
+        "max_hp": 750,
+        "stagger": 450,
+        "max_stagger": 450,
+        "light": 10,
+        "attackslot": 3,
+        "light_gain": 3,
+        "max_light": 10,
+        "pages_drawn": 3,
+        "speed_min": 6,
+        "speed_max": 15,
+        "speed": 10,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Foolhardy",
+            "Lightweight"
+        ],
+        "faction": [
+            "Enemy"
+        ],
+        "evade_queue": [],
+        "resistances": {
+            "slash": 0.75,
+            "blunt": 0.75,
+            "pierce": 0.75
+        },
+        "stagger_resistances": {
+            "slash": 2.0,
+            "blunt": 2.0,
+            "pierce": 2.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Multi-Block",
+            "Multi-Block",
+            "Quickness",
+            "Weakness",
+            "Weakness",
+            "Swiftstrike",
+            "Swiftstrike",
+            "Preemptive Strike",
+            "Preemptive Strike"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 0.75,
+            "blunt": 0.75,
+            "pierce": 0.75
+        },
+        "name": "SturdyFixer3",
+        "_effect_limits_perm": {},
+        "_effect_limits": {},
+        "temphidden": []
+    },
+    "Black Belt Martial Artist SHU": {
+        "hp": 950,
+        "max_hp": 950,
+        "stagger": 650,
+        "max_stagger": 650,
+        "attackslot": 5,
+        "light": 12,
+        "light_gain": 2,
+        "max_light": 12,
+        "pages_drawn": 3,
+        "speed_min": 5,
+        "speed_max": 12,
+        "speed": 5,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy"
+        ],
+        "evade_queue": [],
+        "resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "stagger_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Kick Feint",
+            "Kick Feint",
+            "Martial Scuffle",
+            "Judo Flip",
+            "Headband Toss",
+            "Headband Toss",
+            "It's time to get SERIOUS",
+            "It's time to get SERIOUS",
+            "COUP DE GRACE"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "name": "Black Belt Martial Artist SHU",
+        "_effect_limits_perm": {},
+        "_effect_limits": {},
+        "temphidden": []
+    },
+    "God's Hail": {
+        "hp": 1500,
+        "max_hp": 1500,
+        "stagger": 1500,
+        "max_stagger": 1500,
+        "attackslot": 9,
+        "light": 9,
+        "light_gain": 9,
+        "max_light": 9,
+        "pages_drawn": 9,
+        "speed_min": 10,
+        "speed_max": 10,
+        "speed": 10,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "faction": [
+            "Enemy"
+        ],
+        "evade_queue": [],
+        "resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "stagger_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Hail",
+            "Hail",
+            "Hail",
+            "Hail",
+            "Hail",
+            "Hail",
+            "Hail",
+            "Hail",
+            "Hail"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "name": "God's Hail",
+        "_effect_limits_perm": {},
+        "_effect_limits": {},
+        "temphidden": [],
+        "Lustoverwrite": 2,
+        "Gluttonyoverwrite": 2,
+        "Gloomoverwrite": 2,
+        "Envyoverwrite": 2,
+        "Slothoverwrite": 2,
+        "bluntoverwrite": 2,
+        "pierceoverwrite": 2,
+        "Prideoverwrite": 2
+    },
+    "VigilantFixer1": {
+        "hp": 30,
+        "max_hp": 30,
+        "stagger": 25,
+        "max_stagger": 25,
+        "light": 4,
+        "light_gain": 1,
+        "max_light": 4,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 3,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Lightweight"
+        ],
+        "faction": [
+            "Enemy"
+        ],
+        "evade_queue": [],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Swiftstrike",
+            "Swiftstrike",
+            "Preemptive Strike",
+            "Preemptive Strike",
+            "Quickness",
+            "Quickness",
+            "Weakness",
+            "Weakness",
+            "Weakness"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "name": "VigilantFixer1",
+        "_effect_limits_perm": {},
+        "_effect_limits": {},
+        "temphidden": []
+    },
+    "VigilantFixer2": {
+        "hp": 30,
+        "max_hp": 30,
+        "stagger": 25,
+        "max_stagger": 25,
+        "light": 4,
+        "light_gain": 1,
+        "max_light": 4,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 8,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Lightweight"
+        ],
+        "faction": [
+            "Enemy"
+        ],
+        "evade_queue": [],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Swiftstrike",
+            "Swiftstrike",
+            "Preemptive Strike",
+            "Preemptive Strike",
+            "Quickness",
+            "Quickness",
+            "Weakness",
+            "Weakness",
+            "Weakness"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "name": "VigilantFixer2",
+        "_effect_limits_perm": {},
+        "_effect_limits": {},
+        "temphidden": []
+    },
+    "Jonathan": {
+        "hp": 50,
+        "max_hp": 50,
+        "stagger": 30,
+        "max_stagger": 30,
+        "light": 3,
+        "light_gain": 1,
+        "max_light": 3,
+        "pages_drawn": 1,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 8,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Pages of Scorching Blades Effect"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Headband Toss",
+            "Headband Toss",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Riddle Holes [刺す]",
+            "Riddle Holes [刺す]",
+            "Burn Up",
+            "Burn Up",
+            "Ashes to Ashes"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "name": "Jonathan",
+        "_effect_limits": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Sunny": {
+        "hp": 50,
+        "max_hp": 50,
+        "stagger": 30,
+        "max_stagger": 30,
+        "light": 3,
+        "light_gain": 1,
+        "max_light": 3,
+        "pages_drawn": 1,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 7,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "It's time to get SERIOUS",
+            "Kick Feint",
+            "Kick Feint",
+            "Riddle Holes [刺す]",
+            "This Will Be Easy",
+            "Diagonal Rend [倍増]",
+            "Riddle Holes [刺す]",
+            "Judo Flip"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "name": "Sunny",
+        "_effect_limits": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Ralph": {
+        "hp": 50,
+        "max_hp": 50,
+        "stagger": 30,
+        "max_stagger": 30,
+        "light": 3,
+        "light_gain": 1,
+        "max_light": 3,
+        "pages_drawn": 1,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 3,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Charge and Cover",
+            "Focused Strikes",
+            "Bat Parry",
+            "Bat Parry",
+            "Barbed Strikes",
+            "Bat Parry",
+            "Barbed Strikes",
+            "Bat Bash",
+            "Torn Copy of 'DIE DIE DIE'"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "name": "Ralph",
+        "_effect_limits": {},
+        "_effect_limits_perm": {},
+        "temphidden": [],
+        "slashoverwrite": 2,
+        "Slothoverwrite": 2,
+        "Gluttonyoverwrite": 2,
+        "Prideoverwrite": 2,
+        "Envyoverwrite": 2
+    },
+    "Isaac": {
+        "hp": 35,
+        "max_hp": 50,
+        "stagger": 15,
+        "max_stagger": 30,
+        "light": 2,
+        "light_gain": 1,
+        "max_light": 3,
+        "pages_drawn": 1,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 4,
+        "is_active": true,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "This Will Be Easy",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]",
+            "Riddle Holes [刺す]",
+            "Ready for Duel [一騎打ち]",
+            "Ready for Duel [一騎打ち]",
+            "This Will Be Easy"
+        ],
+        "hand": [
+            "Riddle Holes [刺す]",
+            "This Will Be Easy",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]"
+        ],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "name": "Isaac",
+        "_effect_limits": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Nabi": {
+        "hp": 50,
+        "max_hp": 50,
+        "stagger": 30,
+        "max_stagger": 30,
+        "light": 3,
+        "light_gain": 1,
+        "max_light": 3,
+        "pages_drawn": 1,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 10,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Pride as a Chef",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Ready for Duel [一騎打ち]",
+            "Diagonal Rend [倍増]",
+            "Riddle Holes [刺す]",
+            "One Guard [奥深い]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "One Guard [奥深い]"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "name": "Nabi",
+        "_effect_limits": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Mayu": {
+        "hp": -8,
+        "max_hp": 50,
+        "stagger": 8,
+        "max_stagger": 30,
+        "light": 0,
+        "light_gain": 1,
+        "attackslot": 2,
+        "max_light": 3,
+        "pages_drawn": 1,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 6,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "This Will Be Easy",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "This Will Be Easy",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]",
+            "YAGAWT",
+            "Smackdown",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Smackdown"
+        ],
+        "hand": [
+            "Riddle Holes [刺す]",
+            "YAGAWT",
+            "Smackdown"
+        ],
+        "name": "Mayu",
+        "_effect_limits": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Lenore": {
+        "hp": 50,
+        "max_hp": 50,
+        "stagger": 30,
+        "max_stagger": 30,
+        "light": 3,
+        "light_gain": 1,
+        "max_light": 3,
+        "pages_drawn": 1,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 7,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 1.5,
+            "blunt": 0.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.5,
+            "blunt": 0.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "It's time to get SERIOUS",
+            "It's time to get SERIOUS",
+            "COUP DE GRACE",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Judo Flip",
+            "Judo Flip",
+            "Kick Feint",
+            "Kick Feint"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.5,
+            "blunt": 0.5,
+            "pierce": 1.0
+        },
+        "name": "Lenore",
+        "_effect_limits": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Isma": {
+        "hp": 5,
+        "max_hp": 50,
+        "stagger": 24,
+        "max_stagger": 24,
+        "light": 1,
+        "light_gain": 1,
+        "max_light": 3,
+        "pages_drawn": 1,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 7,
+        "is_active": true,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.6,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.6,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Pride as a Chef",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Diagonal Rend [倍増]",
+            "Diagonal Rend [倍増]",
+            "Ready for Duel [一騎打ち]",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]",
+            "Diagonal Rend [倍増]"
+        ],
+        "hand": [
+            "Pride as a Chef",
+            "Diagonal Rend [倍増]",
+            "Ready for Duel [一騎打ち]",
+            "Ready for Duel [一騎打ち]",
+            "Diagonal Rend [倍増]",
+            "Riddle Holes [刺す]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Diagonal Rend [倍増]"
+        ],
+        "name": "Isma",
+        "_effect_limits": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.6,
+            "pierce": 0.5
+        },
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Guy": {
+        "hp": 50,
+        "max_hp": 50,
+        "stagger": 30,
+        "max_stagger": 30,
+        "light": 3,
+        "light_gain": 1,
+        "max_light": 3,
+        "pages_drawn": 1,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 2,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Player",
+            "Mainstream Office",
+            "Grade 8 Fixer"
+        ],
+        "resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Burn Up",
+            "Burn Up",
+            "Burn Up",
+            "Focused Strikes",
+            "Focused Strikes",
+            "Light Attack",
+            "Light Attack",
+            "Charge and Cover",
+            "Charge and Cover"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 0.5,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "name": "Guy",
+        "_effect_limits": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Lolang": {
+        "hp": 1000000,
+        "max_hp": 1000000,
+        "stagger": 500,
+        "max_stagger": 500,
+        "light": 1000000,
+        "light_gain": 1000000,
+        "max_light": 1000000,
+        "pages_drawn": 10,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 6,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Player"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Malfunction",
+            "Feel The Blazing Vibrations!!",
+            "Invigorate",
+            "Activated Combustion",
+            "Overwhelming",
+            "Cranium Crusher",
+            "Vibrating Fist"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "name": "Lolang",
+        "_effect_limits": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Argalia": {
+        "hp": 1000000,
+        "max_hp": 1000000,
+        "stagger": 401,
+        "max_stagger": 401,
+        "light": 1000000,
+        "light_gain": 1000000,
+        "max_light": 1000000,
+        "pages_drawn": 10,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 6,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Malfunction",
+            "Feel The Blazing Vibrations!!",
+            "Invigorate",
+            "Activated Combustion",
+            "Overwhelming",
+            "Cranium Crusher",
+            "Vibrating Fist"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "name": "Argalia",
+        "_effect_limits": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Terrifying Spinouse Syndicate Member": {
+        "hp": 50,
+        "max_hp": 50,
+        "stagger": 30,
+        "max_stagger": 30,
+        "light": 6,
+        "light_gain": 2,
+        "max_light": 6,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 6,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "Acrotomophilia",
+            "Hematolagnia",
+            "Desecrate Carcass",
+            "Enticing Rampage"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Enemy",
+            "Spinouse Syndicate"
+        ],
+        "resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0
+        },
+        "deck": [
+            "Bat Bash",
+            "Barbed Strikes",
+            "Bat Bash",
+            "Barbed Strikes",
+            "Sneak Attack",
+            "Bat Parry",
+            "Rupturing Strikes",
+            "Bleeding Strikes",
+            "DIE DIE DIE"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "name": "Terrifying Spinouse Syndicate Member",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Ren": {
+        "hp": 60,
+        "max_hp": 60,
+        "stagger": 45,
+        "max_stagger": 45,
+        "light": 5,
+        "light_gain": 2,
+        "max_light": 5,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 7,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Overhead",
+            "Supressed Recoil",
+            "Sinking Advantage"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Enemy",
+            "Quaver Office"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Malfunction",
+            "Invigorate",
+            "Feel The Blazing Vibrations!!",
+            "Activated Combustion",
+            "Overwhelming",
+            "Cranium Crusher",
+            "Vibrating Fist",
+            "Cranium Crusher",
+            "Vibrating Fist"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "name": "Ren",
+        "_effect_limits": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Stubborn Quaver Office Fixer": {
+        "hp": 55,
+        "max_hp": 55,
+        "stagger": 40,
+        "max_stagger": 40,
+        "light": 4,
+        "light_gain": 1,
+        "max_light": 4,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 4,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Overhead",
+            "Tremor Kick-Back"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Enemy",
+            "Quaver Office"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Malfunction",
+            "Activated Combustion",
+            "Overwhelming",
+            "Activated Combustion",
+            "Overwhelming",
+            "Cranium Crusher",
+            "Vibrating Fist",
+            "Cranium Crusher",
+            "Vibrating Fist"
+        ],
+        "hand": [],
+        "name": "Stubborn Quaver Office Fixer",
+        "_effect_limits": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Reluctant Quaver Office Fixer": {
+        "hp": 50,
+        "max_hp": 50,
+        "stagger": 40,
+        "max_stagger": 40,
+        "light": 4,
+        "light_gain": 1,
+        "max_light": 4,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 5,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Overhead",
+            "Tremor Recoil"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Enemy",
+            "Quaver Office"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Malfunction",
+            "Invigorate",
+            "Overwhelming",
+            "Invigorate",
+            "Overwhelming",
+            "Cranium Crusher",
+            "Vibrating Fist",
+            "Cranium Crusher",
+            "Vibrating Fist"
+        ],
+        "hand": [],
+        "name": "Reluctant Quaver Office Fixer",
+        "_effect_limits": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Stubborn Quaver Office Fixer 2": {
+        "hp": 55,
+        "max_hp": 55,
+        "stagger": 40,
+        "max_stagger": 40,
+        "light": 4,
+        "light_gain": 1,
+        "max_light": 4,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 5,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Overhead",
+            "Tremor Kick-Back"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Enemy",
+            "Quaver Office"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Malfunction",
+            "Activated Combustion",
+            "Overwhelming",
+            "Activated Combustion",
+            "Overwhelming",
+            "Cranium Crusher",
+            "Vibrating Fist",
+            "Cranium Crusher",
+            "Vibrating Fist"
+        ],
+        "hand": [],
+        "name": "Stubborn Quaver Office Fixer 2",
+        "_effect_limits": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Reluctant Quaver Office Fixer 2": {
+        "hp": 50,
+        "max_hp": 50,
+        "stagger": 40,
+        "max_stagger": 40,
+        "light": 4,
+        "light_gain": 1,
+        "max_light": 4,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 7,
+        "speed": 7,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "buffs": {},
+        "passives": [
+            "Overhead",
+            "Tremor Recoil"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Enemy",
+            "Quaver Office"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "white": 1.0,
+            "black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Malfunction",
+            "Invigorate",
+            "Overwhelming",
+            "Invigorate",
+            "Overwhelming",
+            "Cranium Crusher",
+            "Vibrating Fist",
+            "Cranium Crusher",
+            "Vibrating Fist"
+        ],
+        "hand": [],
+        "name": "Reluctant Quaver Office Fixer 2",
+        "_effect_limits": {},
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Bistro Chef 1": {
+        "hp": 55,
+        "max_hp": 55,
+        "stagger": 27,
+        "max_stagger": 27,
+        "light": 5,
+        "light_gain": 2,
+        "max_light": 5,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 6,
+        "speed": 3,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "Instant Cooking",
+            "Marbling"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Enemy",
+            "P. Bistro"
+        ],
+        "resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Butcher Cleave",
+            "Unadulterated Slaughter",
+            "Butcher Cleave",
+            "Unadulterated Slaughter",
+            "Meat Injection",
+            "Moisture Retention",
+            "Pride as a Chef",
+            "Pride as a Chef",
+            "Pride as a Chef"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "name": "Bistro Chef 1",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Bistro Chef 2": {
+        "hp": 55,
+        "max_hp": 55,
+        "stagger": 27,
+        "max_stagger": 27,
+        "light": 5,
+        "light_gain": 2,
+        "max_light": 5,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 6,
+        "speed": 4,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "Instant Cooking",
+            "Marbling"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Enemy",
+            "P. Bistro"
+        ],
+        "resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Butcher Cleave",
+            "Unadulterated Slaughter",
+            "Butcher Cleave",
+            "Unadulterated Slaughter",
+            "Meat Injection",
+            "Moisture Retention",
+            "Pride as a Chef",
+            "Pride as a Chef",
+            "Pride as a Chef"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "name": "Bistro Chef 2",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Bistro Chef 3": {
+        "hp": 55,
+        "max_hp": 55,
+        "stagger": 27,
+        "max_stagger": 27,
+        "light": 5,
+        "light_gain": 2,
+        "max_light": 5,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 6,
+        "speed": 5,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "Instant Cooking",
+            "Marbling"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Enemy",
+            "P. Bistro"
+        ],
+        "resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Butcher Cleave",
+            "Unadulterated Slaughter",
+            "Butcher Cleave",
+            "Unadulterated Slaughter",
+            "Meat Injection",
+            "Moisture Retention",
+            "Pride as a Chef",
+            "Pride as a Chef",
+            "Pride as a Chef"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.5,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "name": "Bistro Chef 3",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Jeanne": {
+        "hp": 55,
+        "max_hp": 55,
+        "stagger": 30,
+        "max_stagger": 30,
+        "light": 5,
+        "light_gain": 2,
+        "max_light": 5,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 6,
+        "speed": 3,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "Instant Cooking",
+            "Marbling",
+            "Inherited Cruelty"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Enemy",
+            "P. Bistro"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "stagger_resistances": {
+            "slash": 2.0,
+            "blunt": 1.0,
+            "pierce": 1.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Butcher Cleave",
+            "Unadulterated Slaughter",
+            "Meat Injection",
+            "Moisture Retention",
+            "Pride as a Chef",
+            "Silent Cutter",
+            "Subprimal Finish"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.5,
+            "pierce": 1.0
+        },
+        "name": "Jeanne",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Bound Captive 1": {
+        "hp": 10,
+        "max_hp": 10,
+        "stagger": 10,
+        "max_stagger": 10,
+        "light": 0,
+        "light_gain": 0,
+        "max_light": 0,
+        "pages_drawn": 0,
+        "speed_min": 0,
+        "speed_max": 0,
+        "speed": 0,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Bound Captive",
+            "Player"
+        ],
+        "resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "stagger_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [],
+        "hand": [],
+        "original_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "name": "Bound Captive 1",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Jeff the rat": {
+        "hp": 1.2,
+        "max_hp": 1.2,
+        "stagger": 1.2,
+        "max_stagger": 1.2,
+        "light": 0,
+        "light_gain": 0,
+        "max_light": 0,
+        "pages_drawn": 0,
+        "speed_min": 0,
+        "speed_max": 0,
+        "speed": 0,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Rat",
+            "Player"
+        ],
+        "resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "stagger_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [],
+        "hand": [],
+        "original_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "name": "Jeff the rat",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Bound Captive 2": {
+        "hp": 10,
+        "max_hp": 10,
+        "stagger": 10,
+        "max_stagger": 10,
+        "light": 0,
+        "light_gain": 0,
+        "max_light": 0,
+        "pages_drawn": 0,
+        "speed_min": 0,
+        "speed_max": 0,
+        "speed": 0,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Bound Captive",
+            "Player"
+        ],
+        "resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "stagger_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [],
+        "hand": [],
+        "original_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "name": "Bound Captive 2",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Bound Captive 3": {
+        "hp": 10,
+        "max_hp": 10,
+        "stagger": 10,
+        "max_stagger": 10,
+        "light": 0,
+        "light_gain": 0,
+        "max_light": 0,
+        "pages_drawn": 0,
+        "speed_min": 0,
+        "speed_max": 0,
+        "speed": 0,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Bound Captive",
+            "Player"
+        ],
+        "resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "stagger_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [],
+        "hand": [],
+        "original_resistances": {
+            "slash": 3.0,
+            "blunt": 3.0,
+            "pierce": 3.0
+        },
+        "name": "Bound Captive 3",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Relentless Bladesworn Office Fixer 1": {
+        "hp": 85,
+        "max_hp": 85,
+        "stagger": 45,
+        "max_stagger": 45,
+        "light": 5,
+        "light_gain": 5,
+        "max_light": 5,
+        "pages_drawn": 2,
+        "speed_min": 1,
+        "speed_max": 6,
+        "speed": 5,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "First Impressions [頼む]",
+            "Severing Slash [未実践]",
+            "Accursed Blade - Untrained [悪魔祓い]"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Bladesworn Office Section 12",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Diagonal Rend [倍増]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Diagonal Rend [倍増]",
+            "One Guard [奥深い]",
+            "One Guard [奥深い]",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "name": "Relentless Bladesworn Office Fixer 1",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Relentless Bladesworn Office Fixer 2": {
+        "hp": 85,
+        "max_hp": 85,
+        "stagger": 45,
+        "max_stagger": 45,
+        "light": 5,
+        "light_gain": 2,
+        "max_light": 5,
+        "pages_drawn": 2,
+        "speed_min": 1,
+        "speed_max": 6,
+        "speed": 3,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "First Impressions [頼む]",
+            "Severing Slash [未実践]",
+            "Accursed Blade - Untrained [悪魔祓い]"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Bladesworn Office Section 12",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Diagonal Rend [倍増]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Diagonal Rend [倍増]",
+            "One Guard [奥深い]",
+            "One Guard [奥深い]",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "name": "Relentless Bladesworn Office Fixer 2",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Relentless Bladesworn Office Fixer 3": {
+        "hp": 85,
+        "max_hp": 85,
+        "stagger": 45,
+        "max_stagger": 45,
+        "light": 5,
+        "light_gain": 5,
+        "max_light": 5,
+        "pages_drawn": 2,
+        "speed_min": 1,
+        "speed_max": 6,
+        "speed": 1,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "First Impressions [頼む]",
+            "Severing Slash [未実践]",
+            "Accursed Blade - Untrained [悪魔祓い]"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Bladesworn Office Section 12",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Diagonal Rend [倍増]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Diagonal Rend [倍増]",
+            "One Guard [奥深い]",
+            "One Guard [奥深い]",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "name": "Relentless Bladesworn Office Fixer 3",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Relentless Bladesworn Office Fixer 4": {
+        "hp": 85,
+        "max_hp": 85,
+        "stagger": 45,
+        "max_stagger": 45,
+        "light": 5,
+        "light_gain": 5,
+        "max_light": 5,
+        "pages_drawn": 2,
+        "speed_min": 1,
+        "speed_max": 6,
+        "speed": 5,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "First Impressions [頼む]",
+            "Severing Slash [未実践]",
+            "Accursed Blade - Untrained [悪魔祓い]"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Bladesworn Office Section 12",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Diagonal Rend [倍増]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Draw of the Sword - Vaiśravaṇa Style [切れ]",
+            "Diagonal Rend [倍増]",
+            "One Guard [奥深い]",
+            "One Guard [奥深い]",
+            "Ready for Duel [一騎打ち]",
+            "Riddle Holes [刺す]"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "name": "Relentless Bladesworn Office Fixer 4",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Uesugi": {
+        "hp": 19000,
+        "max_hp": 19000,
+        "stagger": 250,
+        "max_stagger": 250,
+        "light": 9,
+        "light_gain": 4,
+        "max_light": 9,
+        "attackslot": 4,
+        "pages_drawn": 4,
+        "speed_min": 10,
+        "speed_max": 60,
+        "hidden": [
+            "hp",
+            "stagger",
+            "speed",
+            "res",
+            "light",
+            "staggerstate",
+            "staggerres",
+            "sinres",
+            "deck"
+        ],
+        "speed": 21,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "Effloresced E.G.O - Nagao",
+            "Scare factor 1",
+            "Scare factor 2",
+            "Scare factor 3",
+            "Scare factor 4",
+            "Scare factor 5",
+            "Scare factor 6"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Bladesworn Office Section 1 Rep",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 0.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 0.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Sacrilegious Rend",
+            "Sacrilegious Rend",
+            "Sacrilegious Rend",
+            "Sacrilegious Rend",
+            "Sacrilegious Rend",
+            "Sacrilegious Rend",
+            "Rite of Judgement",
+            "Rite of Judgement",
+            "Rite of Judgement"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 0.0,
+            "blunt": 1.0,
+            "pierce": 1.5
+        },
+        "name": "Uesugi",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Severed Palm Fixer 1": {
+        "hp": 75,
+        "max_hp": 75,
+        "stagger": 40,
+        "max_stagger": 40,
+        "light": 5,
+        "light_gain": 1,
+        "max_light": 5,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 8,
+        "speed": 8,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "Page Efficiency",
+            "Ranged Proficiency",
+            "Defending Prowess"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Severed Palm Office",
+            "The Thumb?",
+            "Soldato I?",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Rifle Puncture",
+            "Rifle Puncture",
+            "Rifle Puncture",
+            "Ferrous Guard",
+            "Ferrous Guard",
+            "Musket Fire",
+            "Musket Fire",
+            "Smackdown",
+            "Smackdown"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "name": "Severed Palm Fixer 1",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Severed Palm Fixer 2": {
+        "hp": 75,
+        "max_hp": 75,
+        "stagger": 40,
+        "max_stagger": 40,
+        "light": 5,
+        "light_gain": 1,
+        "max_light": 5,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 8,
+        "speed": 8,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "Page Efficiency",
+            "Ranged Proficiency",
+            "Attacking Prowess"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Severed Palm Office",
+            "The Thumb?",
+            "Soldato I?",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Rifle Puncture",
+            "Rifle Puncture",
+            "Rifle Puncture",
+            "Ferrous Guard",
+            "Ferrous Guard",
+            "Musket Fire",
+            "Musket Fire",
+            "Smackdown",
+            "Smackdown"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "name": "Severed Palm Fixer 2",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Severed Palm Fixer 3": {
+        "hp": -2,
+        "max_hp": 75,
+        "stagger": 25,
+        "max_stagger": 40,
+        "light": 4,
+        "light_gain": 1,
+        "max_light": 5,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 8,
+        "speed": 2,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "Page Efficiency",
+            "Ranged Proficiency",
+            "Blitzing Prowess"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Severed Palm Office",
+            "The Thumb?",
+            "Soldato I?",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Rifle Puncture",
+            "Rifle Puncture",
+            "Rifle Puncture",
+            "Ferrous Guard",
+            "Ferrous Guard",
+            "Musket Fire",
+            "Musket Fire",
+            "Smackdown",
+            "Smackdown"
+        ],
+        "hand": [
+            "Musket Fire",
+            "Musket Fire",
+            "Ferrous Guard",
+            "Rifle Puncture",
+            "Smackdown",
+            "Rifle Puncture",
+            "Smackdown",
+            "Rifle Puncture"
+        ],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "name": "Severed Palm Fixer 3",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Severed Palm Fixer 4": {
+        "hp": 75,
+        "max_hp": 75,
+        "stagger": 40,
+        "max_stagger": 40,
+        "light": 5,
+        "light_gain": 1,
+        "max_light": 5,
+        "pages_drawn": 2,
+        "speed_min": 2,
+        "speed_max": 8,
+        "speed": 3,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "Page Efficiency",
+            "Ranged Proficiency",
+            "Instructional Prowess"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Severed Palm Office",
+            "The Thumb?",
+            "Soldato I?",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Rifle Puncture",
+            "Rifle Puncture",
+            "Rifle Puncture",
+            "Ferrous Guard",
+            "Ferrous Guard",
+            "Musket Fire",
+            "Musket Fire",
+            "Smackdown",
+            "Smackdown"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "name": "Severed Palm Fixer 4",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Severed Palm Rep": {
+        "hp": 100,
+        "max_hp": 100,
+        "stagger": 55,
+        "max_stagger": 55,
+        "light": 6,
+        "light_gain": 2,
+        "max_light": 6,
+        "pages_drawn": 2,
+        "attackslot": 2,
+        "speed_min": 3,
+        "speed_max": 8,
+        "speed": 6,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "Page Efficiency",
+            "Ranged Proficiency"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Severed Palm Office",
+            "The Thumb?",
+            "Sottocapo I?",
+            "Enemy"
+        ],
+        "resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "stagger_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "Rifle Puncture",
+            "Rifle Puncture",
+            "Order Fire",
+            "Suppressing Volley",
+            "Suppressing Volley",
+            "Musket Fire",
+            "Musket Fire",
+            "Smackdown",
+            "Smackdown"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 1.0,
+            "blunt": 0.5,
+            "pierce": 1.5
+        },
+        "name": "Severed Palm Rep",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Jeremy The Green Jeremy": {
+        "hp": 19000,
+        "max_hp": 19000,
+        "stagger": 250,
+        "max_stagger": 250,
+        "light": 9,
+        "light_gain": 4,
+        "max_light": 9,
+        "attackslot": 4,
+        "pages_drawn": 4,
+        "speed_min": 10,
+        "speed_max": 60,
+        "hidden": [
+            "hp",
+            "stagger",
+            "speed",
+            "res",
+            "light",
+            "staggerstate",
+            "staggerres",
+            "sinres",
+            "deck"
+        ],
+        "speed": 23,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "Scare factor 1",
+            "Scare factor 2",
+            "Scare factor 3",
+            "Scare factor 4",
+            "Scare factor 5",
+            "Scare factor 6"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "Reality Being",
+            "Player"
+        ],
+        "resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "stagger_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [],
+        "hand": [],
+        "original_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "name": "Jeremy The Green Jeremy",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Shady Individual": {
+        "hp": 19000,
+        "max_hp": 19000,
+        "stagger": 250,
+        "max_stagger": 250,
+        "light": 9,
+        "light_gain": 4,
+        "max_light": 9,
+        "attackslot": 4,
+        "pages_drawn": 4,
+        "speed_min": 10,
+        "speed_max": 60,
+        "hidden": [
+            "hp",
+            "stagger",
+            "speed",
+            "res",
+            "light",
+            "staggerstate",
+            "staggerres",
+            "sinres",
+            "deck"
+        ],
+        "speed": 23,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [
+            "Scare factor 1",
+            "Scare factor 2",
+            "Scare factor 3",
+            "Scare factor 4",
+            "Scare factor 5",
+            "Scare factor 6"
+        ],
+        "evade_queue": [],
+        "faction": [
+            "The Mirror Hood",
+            "Player"
+        ],
+        "resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "stagger_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [],
+        "hand": [],
+        "original_resistances": {
+            "slash": 0,
+            "blunt": 0,
+            "pierce": 0
+        },
+        "name": "Shady Individual",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    },
+    "Polarity": {
+        "hp": 350,
+        "max_hp": 350,
+        "stagger": 150,
+        "max_stagger": 150,
+        "light": 10,
+        "light_gain": 3,
+        "max_light": 10,
+        "pages_drawn": 3,
+        "speed_min": 2,
+        "speed_max": 6,
+        "speed": 4,
+        "is_active": false,
+        "level": 10,
+        "stats": {
+            "str": 10,
+            "int": 10,
+            "const": 10,
+            "chr": 10,
+            "dex": 10
+        },
+        "is_staggered": false,
+        "nextturn": {
+            "light": 0
+        },
+        "passives": [],
+        "evade_queue": [],
+        "faction": [
+            "Enemy",
+            "Abnormality",
+            "SPless"
+        ],
+        "resistances": {
+            "slash": 0.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "stagger_resistances": {
+            "slash": 0.0,
+            "blunt": 2.0,
+            "pierce": 1.75
+        },
+        "sin_resistances": {
+            "Wrath": 1.0,
+            "Lust": 1.0,
+            "Sloth": 1.0,
+            "Gluttony": 1.0,
+            "Gloom": 1.0,
+            "Pride": 1.0,
+            "Envy": 1.0,
+            "White": 1.0,
+            "Black": 1.0,
+            "none": 1.0
+        },
+        "deck": [
+            "DIVINE POLAR LIGHT"
+        ],
+        "hand": [],
+        "original_resistances": {
+            "slash": 0.0,
+            "blunt": 1.5,
+            "pierce": 0.5
+        },
+        "name": "Polarity",
+        "_effect_limits": {},
+        "buffs": {},
+        "_effect_limits_perm": {},
+        "temphidden": []
+    }
+}

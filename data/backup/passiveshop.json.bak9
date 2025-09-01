@@ -1,0 +1,109 @@
+{
+    "SHOP": {
+        "currentlyselling": {
+            "First Impressions [頼む]": 345,
+            "Scorching Passion": 133,
+            "Toxicant Breath": 750,
+            "Imperfect Battery": 378,
+            "Reshuffle": 651,
+            "Reaction Force": 360
+        },
+        "cansell": [
+            "First Impressions [頼む]",
+            "Scorching Passion",
+            "Toxicant Breath",
+            "Imperfect Battery",
+            "Reshuffle",
+            "Reaction Force",
+            "Accursed Blade - Untrained [悪魔祓い]",
+            "Poison-tipped Muscleripper",
+            "Gashing Wounds",
+            "Ready Quiver",
+            "Trailblazer",
+            "Complete Drive",
+            "Accurate Slice",
+            "Full Throttle",
+            "Instant Cooking",
+            "Parasitism",
+            "Gluttonous Exploitation",
+            "Short Ammo Magazine",
+            "Lowstrider",
+            "Unseen Threat",
+            "None Left Behind"
+        ],
+        "sellingamount": 6
+    },
+    "Scorching Passion": {
+        "tier": "Paperback"
+    },
+    "Lowstrider": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Unseen Threat": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "None Left Behind": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Ready Quiver": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Poison-tipped Muscleripper": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Toxicant Breath": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "Full Throttle": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Complete Drive": {
+        "tier": "Limited",
+        "stage": "Urban Myth"
+    },
+    "First Impressions [頼む]": {
+        "tier": "Hardcover",
+        "stage": "Urban Myth"
+    },
+    "Accursed Blade - Untrained [悪魔祓い]": {
+        "tier": "Paperback",
+        "stage": "Urban Myth"
+    },
+    "Instant Cooking": {
+        "tier": "Limited"
+    },
+    "Gashing Wounds": {
+        "tier": "Paperback"
+    },
+    "Parasitism": {
+        "tier": "Hardcover"
+    },
+    "Trailblazer": {
+        "tier": "Limited"
+    },
+    "Accurate Slice": {
+        "tier": "Paperback"
+    },
+    "Imperfect Battery": {
+        "tier": "Hardcover"
+    },
+    "Gluttonous Exploitation": {
+        "tier": "Paperback"
+    },
+    "Reshuffle": {
+        "tier": "Limited"
+    },
+    "Short Ammo Magazine": {
+        "tier": "Hardcover"
+    },
+    "Reaction Force": {
+        "tier": "Hardcover"
+    }
+}

@@ -1,0 +1,4133 @@
+{
+    "Shield of Light": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 2,
+        "cost": 100,
+        "recipe": {
+            "Sloth": 2,
+            "Gloom": 2
+        },
+        "level": 1,
+        "1": {
+            "description": "On Use, 50% chance not to consume light and recover hp equal to light",
+            "effects": [
+                {
+                    "trigger": "on_use",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "chance": 50
+                    },
+                    "get": {
+                        "lightcost": 100
+                    },
+                    "modifiers": {
+                        "gainlight": "lightcost",
+                        "recoverhp": "lightcost"
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Narcotics": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 1,
+        "cost": 50,
+        "recipe": {
+            "Wrath": 2,
+            "Gloom": 1
+        },
+        "level": 1,
+        "1": {
+            "description": "+1 Power Up",
+            "effects": [
+                {
+                    "trigger": "on_roll",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {},
+                    "modifiers": {
+                        "power_bonus": 1
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Extra-Strong Narcotics": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 3,
+        "cost": 200,
+        "hiderecipe": true,
+        "recipe": {
+            "Wrath": 8,
+            "Gloom": 4
+        },
+        "level": 1,
+        "1": {
+            "description": "+3 Power Up, Turn Start gain 2 speed and unstagger if you're staggered",
+            "effects": [
+                {
+                    "trigger": "on_roll",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {},
+                    "modifiers": {
+                        "power_bonus": 3
+                    }
+                },
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {},
+                    "modifiers": {
+                        "speed_bonus": 2,
+                        "setstat": {
+                            "is_staggered": false,
+                            "stagger": 30
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Put the fries in the fucking bag bro": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 6,
+        "cost": 1,
+        "level": 1,
+        "1": {
+            "description": "+5 Power Up,, COoked ass SHit",
+            "effects": [
+                {
+                    "trigger": "on_roll",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "modifiers": {
+                        "power_bonus": 5
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Prophecy of Fire": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 1,
+        "cost": 50,
+        "level": 1,
+        "1": {
+            "description": "On Hit, inflict 1 burn and 50% chance to inflict 1 burn count",
+            "effects": [
+                {
+                    "trigger": "on_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "target",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "chance": 50
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Burn": {
+                                "count": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "on_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "target",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Burn": {
+                                "stack": 1
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Smokes and Wires": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 3,
+        "cost": 250,
+        "level": 1,
+        "1": {
+            "description": "On Hit, 35% chance to inflict 1 bleed and 1 Bleed count",
+            "effects": [
+                {
+                    "trigger": "on_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "target",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "chance": 35
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Bleed": {
+                                "stack": 1,
+                                "count": 1
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Dry-to-the-Bone Breast": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 3,
+        "cost": 250,
+        "level": 1,
+        "1": {
+            "description": "On Hit, 35% chance to inflict 1 Rupture and 1 Rupture count",
+            "effects": [
+                {
+                    "trigger": "on_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "target",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "chance": 35
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Rupture": {
+                                "stack": 1,
+                                "count": 1
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Hot n Juicy Drumstick": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 3,
+        "cost": 250,
+        "level": 1,
+        "1": {
+            "description": "On Hit, 35% chance to inflict 1 Burn and 1 Burn count",
+            "effects": [
+                {
+                    "trigger": "on_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "target",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "chance": 35
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Burn": {
+                                "stack": 1,
+                                "count": 1
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Bursts": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 3,
+        "cost": 250,
+        "level": 1,
+        "1": {
+            "description": "On Hit, inflict Bonus Damage equal to rupture stack on enemy (basically trigger rupture twice for the price of 1 count)",
+            "effects": [
+                {
+                    "trigger": "on_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "target",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {
+                        "Rupture": {
+                            "value": "stack",
+                            "targetOverride": "target"
+                        }
+                    },
+                    "modifiers": {
+                        "takehpdamage": "Rupture_stack"
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Purple Zippo Lighter": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 1,
+        "cost": 150,
+        "level": 1,
+        "1": {
+            "description": "On turn start, gain 1 Envy Resource and 2 Random Resources",
+            "effects": [
+                {
+                    "trigger": "truenewturn",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {},
+                    "get": {},
+                    "modifiers": {
+                        "resource": {
+                            "amount": 1,
+                            "faction": "Player",
+                            "absolute": true,
+                            "sin": "Envy"
+                        }
+                    }
+                },
+                {
+                    "trigger": "truenewturn",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {},
+                    "get": {},
+                    "modifiers": {
+                        "resource": {
+                            "amount": 1,
+                            "faction": "Player",
+                            "absolute": true,
+                            "sin": "random2",
+                            "exclude": [
+                                "Envy"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Discount Card": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 1,
+        "cost": 100,
+        "level": 1,
+        "1": {
+            "description": "Shop Heals and revives Costs reduced by 50%",
+            "effects": []
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Black Belt": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 3,
+        "cost": 200,
+        "level": 1,
+        "1": {
+            "description": "On turn start, draw an additional page, gain 2 speed and gain 2 Poise and 2 Poise Count",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Poise": {
+                                "stack": 2,
+                                "count": 2
+                            }
+                        },
+                        "draw": 1,
+                        "speed_bonus": 2
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Scorching Blades": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 3,
+        "cost": 150,
+        "recipe": {
+            "Wrath": 5,
+            "Envy": 2
+        },
+        "level": 1,
+        "1": {
+            "description": "If you have burn at turn start, recover 3 hp",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_min": {
+                            "buff": "Burn",
+                            "value": 1
+                        }
+                    },
+                    "modifiers": {
+                        "takehpdamage": -3
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Swift and Nimble": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 2,
+        "cost": 100,
+        "recipe": {
+            "Sloth": 4
+        },
+        "level": 1,
+        "1": {
+            "description": "at turn start gain 4 additional speed",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "modifiers": {
+                        "speed_bonus": 4
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Barbed Bat": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 3,
+        "cost": 100,
+        "recipe": {
+            "Wrath": 4,
+            "Gluttony": 4
+        },
+        "level": 1,
+        "1": {
+            "description": "On Hit with a Spinouse Syndicate Page, Inflict 1 rupture, 1 rupture count, 1 bleed, 1 bleed count, on clash win with a Spinouse Syndicate Page, Inflict 1 rupture, 1 rupture count, 1 bleed, 1 bleed count",
+            "effects": [
+                {
+                    "trigger": "on_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "target",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "pagechecklist": [
+                            "DIE DIE DIE",
+                            "Torn Copy of 'DIE DIE DIE'",
+                            "Bat Bash",
+                            "Barbed Strikes",
+                            "Sneak Attack",
+                            "Bat Parry",
+                            "Rupturing Strikes",
+                            "Bleeding Strikes"
+                        ]
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Bleed": {
+                                "count": 1,
+                                "stack": 1
+                            },
+                            "Rupture": {
+                                "count": 1,
+                                "stack": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "clash_win",
+                    "conditionTarget": "self",
+                    "modifierTarget": "target",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "pagechecklist": [
+                            "DIE DIE DIE",
+                            "Torn Copy of 'DIE DIE DIE'",
+                            "Bat Bash",
+                            "Barbed Strikes",
+                            "Sneak Attack",
+                            "Bat Parry",
+                            "Rupturing Strikes",
+                            "Bleeding Strikes"
+                        ]
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Bleed": {
+                                "count": 1,
+                                "stack": 1
+                            },
+                            "Rupture": {
+                                "count": 1,
+                                "stack": 1
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Northern Lights": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 4,
+        "cost": 500,
+        "recipe": {
+            "Wrath": 3,
+            "Envy": 3,
+            "Gloom": 3,
+            "Pride": 3
+        },
+        "level": 1,
+        "1": {
+            "description": "Whenever this unit falls below 20% HP, Polarize this unit's HP, Light and Stagger. Whenever this unit uses more than +3 Light with a skill while being less than 50% HP,25% chance to Polarize the opponent's HP.",
+            "effects": []
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Perfect Wings": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 5,
+        "cost": 750,
+        "recipe": {
+            "Wrath": 3,
+            "Envy": 3,
+            "Sloth": 3,
+            "Gloom": 3,
+            "Gluttony": 3,
+            "Lust": 3,
+            "Pride": 3
+        },
+        "level": 1,
+        "1": {
+            "description": "Allows you to ignore path lines",
+            "effects": []
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Perversion": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 1,
+        "cost": 110,
+        "level": 1,
+        "recipe": {
+            "Wrath": 4,
+            "Lust": 4
+        },
+        "1": {
+            "description": "On Kill: Gain +1 Wrath E.G.O resource and 1 random E.G.O resource of a random non Wrath Affinity",
+            "effects": [
+                {
+                    "trigger": "on_kill",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "resource": {
+                            "amount": 1,
+                            "faction": "Player",
+                            "absolute": true,
+                            "sin": "Wrath"
+                        }
+                    }
+                },
+                {
+                    "trigger": "on_kill",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "resource": {
+                            "amount": 1,
+                            "faction": "Player",
+                            "absolute": true,
+                            "sin": "random1",
+                            "exclude": [
+                                "Wrath"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "On Kill: Gain +2 Wrath E.G.O resources and 1 random E.G.O resource of a random non Wrath Affinity ",
+            "effects": [
+                {
+                    "trigger": "on_kill",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "resource": {
+                            "amount": 2,
+                            "faction": "Player",
+                            "absolute": true,
+                            "sin": "Wrath"
+                        }
+                    }
+                },
+                {
+                    "trigger": "on_kill",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "resource": {
+                            "amount": 1,
+                            "faction": "Player",
+                            "absolute": true,
+                            "sin": "random1",
+                            "exclude": [
+                                "Wrath"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "3": {
+            "description": "On Kill: Gain +2 Wrath E.G.O resources 1 random E.G.O resource of 2 random non Wrath Affinities",
+            "effects": [
+                {
+                    "trigger": "on_kill",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "resource": {
+                            "amount": 2,
+                            "faction": "Player",
+                            "absolute": true,
+                            "sin": "Wrath"
+                        }
+                    }
+                },
+                {
+                    "trigger": "on_kill",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "resource": {
+                            "amount": 1,
+                            "faction": "Player",
+                            "absolute": true,
+                            "sin": "random2",
+                            "exclude": [
+                                "Wrath"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "Value Disposal": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 2,
+        "cost": 150,
+        "level": 1,
+        "recipe": {
+            "Sloth": 1
+        },
+        "hiderecipe": false,
+        "1": {
+            "description": "On Ally Death: Gain +2 E.G.O resource for all affinities, then all allies draw 2 pages",
+            "effects": [
+                {
+                    "trigger": "on_death",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "resource": {
+                            "amount": 2,
+                            "faction": "Player",
+                            "absolute": true,
+                            "sin": "random7"
+                        }
+                    }
+                },
+                {
+                    "trigger": "on_death",
+                    "conditionTarget": "self",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "draw": 2
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Worn Hilt": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 3,
+        "cost": 300,
+        "level": 1,
+        "recipe": {
+            "Pride": 5,
+            "Lust": 8,
+            "Gloom": 1
+        },
+        "hiderecipe": false,
+        "1": {
+            "description": "Turn Start: Gain 2 Lust Power Up next scene",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Lust Power Up": {
+                                "stack": 2,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Yin": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 5,
+        "cost": 500,
+        "level": 1,
+        "recipe": {
+            "Black": 10
+        },
+        "hiderecipe": false,
+        "1": {
+            "description": "Turn Start: Gain 4 Black Power Up next turn\nClash Win: If this Dice was Black Affinity, and the target Dice's Affinity was White, inflict 15 bonus damage and gain 2 Clash Power Up next turn",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {},
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Black Power Up": {
+                                "stack": 4,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "on_roll",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {},
+                    "get": {},
+                    "modifiers": {
+                        "storagebox": [
+                            {
+                                "name": "WasWhite",
+                                "valuename": "WasWhite",
+                                "value": 0,
+                                "mode": "set"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "trigger": "clash_win",
+                    "conditionTarget": "target",
+                    "modifierTarget": "self",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {
+                        "dice_sin": [
+                            "White"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "storagebox": [
+                            {
+                                "name": "WasWhite",
+                                "valuename": "WasWhite",
+                                "value": 1,
+                                "mode": "set"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "trigger": "clash_win",
+                    "conditionTarget": "self",
+                    "modifierTarget": "target",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {
+                        "dice_sin": [
+                            "Black"
+                        ],
+                        "storagebox_check": [
+                            {
+                                "name": "WasWhite",
+                                "valuename": "WasWhite",
+                                "equal": 1
+                            }
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "flatdamage": {
+                            "slash": 5,
+                            "pierce": 5,
+                            "blunt": 5
+                        }
+                    }
+                },
+                {
+                    "trigger": "clash_win",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {
+                        "dice_sin": [
+                            "Black"
+                        ],
+                        "storagebox_check": [
+                            {
+                                "name": "WasWhite",
+                                "valuename": "WasWhite",
+                                "equal": 1
+                            }
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Clash Power Up": {
+                                "stack": 2,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        },
+                        "storagebox": [
+                            {
+                                "name": "WasWhite",
+                                "valuename": "WasWhite",
+                                "value": 0,
+                                "mode": "set"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Yang": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 5,
+        "cost": 500,
+        "level": 1,
+        "recipe": {
+            "White": 10
+        },
+        "hiderecipe": false,
+        "1": {
+            "description": "Turn Start: Gain 4 White Power Up next turn\nClash Win: If this Dice was White Affinity, and the target Dice's Affinity was Black, inflict 15 bonus damage and gain 2 Clash Power Up next turn",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {},
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "White Power Up": {
+                                "stack": 4,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "on_roll",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {},
+                    "get": {},
+                    "modifiers": {
+                        "storagebox": [
+                            {
+                                "name": "WasBlack",
+                                "valuename": "WasBlack",
+                                "value": 0,
+                                "mode": "set"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "trigger": "clash_win",
+                    "conditionTarget": "target",
+                    "modifierTarget": "self",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {
+                        "dice_sin": [
+                            "Black"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "storagebox": [
+                            {
+                                "name": "WasBlack",
+                                "valuename": "WasBlack",
+                                "value": 1,
+                                "mode": "set"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "trigger": "clash_win",
+                    "conditionTarget": "self",
+                    "modifierTarget": "target",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {
+                        "dice_sin": [
+                            "White"
+                        ],
+                        "storagebox_check": [
+                            {
+                                "name": "WasBlack",
+                                "valuename": "WasBlack",
+                                "equal": 1
+                            }
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "flatdamage": {
+                            "slash": 5,
+                            "pierce": 5,
+                            "blunt": 5
+                        }
+                    }
+                },
+                {
+                    "trigger": "clash_win",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {
+                        "dice_sin": [
+                            "White"
+                        ],
+                        "storagebox_check": [
+                            {
+                                "name": "WasBlack",
+                                "valuename": "WasBlack",
+                                "equal": 1
+                            }
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Clash Power Up": {
+                                "stack": 2,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        },
+                        "storagebox": [
+                            {
+                                "name": "WasBlack",
+                                "valuename": "WasBlack",
+                                "value": 0,
+                                "mode": "set"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Phlebotomy Pack": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 1,
+        "cost": 160,
+        "level": 1,
+        "recipe": {
+            "Wrath": 8
+        },
+        "1": {
+            "description": "On Hit: This unit heals HP equal to 20% of damage dealt. If the dice used was Wrath Affinity, increase healing by an additional 20%",
+            "effects": [
+                {
+                    "trigger": "on_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {
+                        "damagedealt": -20
+                    },
+                    "modifiers": {
+                        "takehpdamage": "damagedealt"
+                    }
+                },
+                {
+                    "trigger": "on_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "dice_sin": [
+                            "Wrath"
+                        ]
+                    },
+                    "get": {
+                        "damagedealt": -20
+                    },
+                    "modifiers": {
+                        "takehpdamage": "damagedealt"
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Torn Bandolier": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 2,
+        "cost": 190,
+        "level": 1,
+        "recipe": {
+            "Gloom": 8
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "Pierce Dice gain Clash Power +1\nTurn Start: If this unit does not have Ammo, gain 2 Ammo next turn",
+            "effects": [
+                {
+                    "trigger": "on_roll",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "dice_type": [
+                            "pierce"
+                        ],
+                        "pageusetype": [
+                            "Clash"
+                        ]
+                    },
+                    "modifiers": {
+                        "power_bonus": 1
+                    }
+                },
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_max": {
+                            "buff": "Ammo",
+                            "value": 0
+                        }
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Ammo": {
+                                "stack": 3,
+                                "nextturn": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Sundered Memory": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 4,
+        "cost": 450,
+        "level": 1,
+        "hiderecipe": true,
+        "1": {
+            "description": "Slash Dice gain Power +2 and +2 Max Dice Power\nOn Clash Win: If the Dice used was Slash affinity, gain 1 Haste next turn, and deal +(Speed Difference) Slash damage",
+            "effects": [
+                {
+                    "trigger": "on_roll",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "dice_type": [
+                            "slash"
+                        ]
+                    },
+                    "modifiers": {
+                        "power_bonus": 2,
+                        "changedice": {
+                            "dice": "all",
+                            "boostmax": 2
+                        }
+                    }
+                },
+                {
+                    "trigger": "clash_win",
+                    "conditionTarget": "self",
+                    "modifierTarget": "target",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "dice_type": [
+                            "slash"
+                        ]
+                    },
+                    "get": {
+                        "speedDifference": {
+                            "max": 99
+                        }
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Haste": {
+                                "stack": 1,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        },
+                        "flatdamage": {
+                            "slash": "speedDifference"
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Punctured Memory": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 4,
+        "cost": 450,
+        "level": 1,
+        "hiderecipe": true,
+        "1": {
+            "description": "Pierce Dice gain Power +2 and +2 Max Dice Power\nOn Clash Win: If the Dice used was Pierce affinity, gain 1 Haste next turn, and deal +(Speed Difference) Pierce damage",
+            "effects": [
+                {
+                    "trigger": "on_roll",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "dice_type": [
+                            "pierce"
+                        ]
+                    },
+                    "modifiers": {
+                        "power_bonus": 2,
+                        "changedice": {
+                            "dice": "all",
+                            "boostmax": 2
+                        }
+                    }
+                },
+                {
+                    "trigger": "clash_win",
+                    "conditionTarget": "self",
+                    "modifierTarget": "target",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "dice_type": [
+                            "pierce"
+                        ]
+                    },
+                    "get": {
+                        "speedDifference": {
+                            "max": 99
+                        }
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Haste": {
+                                "stack": 1,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        },
+                        "flatdamage": {
+                            "pierce": "speedDifference"
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Crushed  Memory": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 4,
+        "cost": 450,
+        "level": 1,
+        "hiderecipe": true,
+        "1": {
+            "description": "Blunt Dice gain Power +2 and +2 Max Dice Power\nOn Clash Win: If the Dice used was Blunt affinity, gain 1 Haste next turn, and deal +(Speed Difference) Blunt damage",
+            "effects": [
+                {
+                    "trigger": "on_roll",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "dice_type": [
+                            "blunt"
+                        ]
+                    },
+                    "modifiers": {
+                        "power_bonus": 2,
+                        "changedice": {
+                            "dice": "all",
+                            "boostmax": 2
+                        }
+                    }
+                },
+                {
+                    "trigger": "clash_win",
+                    "conditionTarget": "self",
+                    "modifierTarget": "target",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "dice_type": [
+                            "blunt"
+                        ]
+                    },
+                    "get": {
+                        "speedDifference": {
+                            "max": 99
+                        }
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Haste": {
+                                "stack": 1,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        },
+                        "flatdamage": {
+                            "blunt": "speedDifference"
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Red Tassel": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 3,
+        "cost": 300,
+        "level": 1,
+        "recipe": {
+            "Pride": 15,
+            "Wrath": 5
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "If any unit has a 1.5 or lower Slash Resistance, change it to 1.5 (This applies to both allies and enemies)",
+            "effects": [
+                {
+                    "trigger": "before_when_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "resist_max": {
+                            "res": "slash",
+                            "restype": "resistances",
+                            "value": 1.5
+                        }
+                    },
+                    "modifiers": {
+                        "overwriteresistance": {
+                            "slash": 1.5
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Equalizer": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 3,
+        "cost": 300,
+        "level": 1,
+        "recipe": {
+            "Sloth": 4,
+            "Gloom": 8,
+            "Wrath": 8
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "If any unit has a 1.5 or lower Pierce Resistance, change it to 1.5 (This applies to both allies and enemies)",
+            "effects": [
+                {
+                    "trigger": "before_when_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "resist_max": {
+                            "res": "pierce",
+                            "restype": "resistances",
+                            "value": 1.5
+                        }
+                    },
+                    "modifiers": {
+                        "overwriteresistance": {
+                            "slash": 1.5
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Crushing Presence": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 3,
+        "cost": 300,
+        "level": 1,
+        "recipe": {
+            "Sloth": 8,
+            "Gluttony": 8,
+            "Envy": 4
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "If any unit has a 1.5 or lower Blunt Resistance, change it to 1.5 (This applies to both allies and enemies)",
+            "effects": [
+                {
+                    "trigger": "before_when_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "resist_max": {
+                            "res": "blunt",
+                            "restype": "resistances",
+                            "value": 1.5
+                        }
+                    },
+                    "modifiers": {
+                        "overwriteresistance": {
+                            "blunt": 1.5
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Lunar Memory": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 5,
+        "cost": 800,
+        "level": 1,
+        "1": {
+            "description": "All unit Physical and Sin Resistances change to 2.0 (This applies to both allies and enemies)",
+            "effects": [
+                {
+                    "trigger": "before_when_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {},
+                    "modifiers": {
+                        "overwriteresistance": {
+                            "slash": 2,
+                            "pierce": 2,
+                            "blunt": 2,
+                            "Wrath": 2,
+                            "Lust": 2,
+                            "Sloth": 2,
+                            "Gluttony": 2,
+                            "Pride": 2,
+                            "Gloom": 2,
+                            "Envy": 2
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Solar Dementia": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 5,
+        "cost": 800,
+        "level": 1,
+        "1": {
+            "description": "All allies Physical and Sin Resistances change to 0.5",
+            "effects": [
+                {
+                    "trigger": "before_when_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "modifiers": {
+                        "overwriteresistance": {
+                            "slash": 0.5,
+                            "pierce": 0.5,
+                            "blunt": 0.5,
+                            "Wrath": 0.5,
+                            "Lust": 0.5,
+                            "Sloth": 0.5,
+                            "Gluttony": 0.5,
+                            "Pride": 0.5,
+                            "Gloom": 0.5,
+                            "Envy": 0.5
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Nixie Divergence": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 2,
+        "cost": 214,
+        "level": 1,
+        "recipe": {
+            "Envy": 3,
+            "Sloth": 6
+        },
+        "1": {
+            "description": "Encounter Start: For every ally fielded, inflict 1 Tremor Potency and Count to all enemies.\nOn Hit: If the dice used was Envy Affinity, inflict 2 Tremor Potency",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "limit_per_encounter": 1,
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {},
+                    "get": {},
+                    "modifiers": {
+                        "storagebox": [
+                            {
+                                "name": "Playercount",
+                                "valuename": "Playercount",
+                                "value": 1,
+                                "mode": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "trigger": "newturn",
+                    "limit_per_encounter": 1,
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "filterfaction": [
+                        "Enemy"
+                    ],
+                    "condition": {},
+                    "get": {
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "Playercount",
+                                    "valuename": "Playercount"
+                                }
+                            ]
+                        }
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "stack": "SB_Playercount",
+                                "count": "SB_Playercount"
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "on_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "target",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "dice_sin": [
+                            "Envy"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "stack": 2
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "Encounter Start: For every ally fielded, inflict 1 Tremor Potency and Count to all enemies.\nOn Hit: If the dice used was Envy Affinity, inflict 4 Tremor Potency",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "limit_per_encounter": 1,
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {},
+                    "get": {},
+                    "modifiers": {
+                        "storagebox": [
+                            {
+                                "name": "Playercount",
+                                "valuename": "Playercount",
+                                "value": 1,
+                                "mode": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "trigger": "newturn",
+                    "limit_per_encounter": 1,
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "filterfaction": [
+                        "Enemy"
+                    ],
+                    "condition": {},
+                    "get": {
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "Playercount",
+                                    "valuename": "Playercount"
+                                }
+                            ]
+                        }
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "stack": "SB_Playercount",
+                                "count": "SB_Playercount"
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "on_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "target",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "dice_sin": [
+                            "Envy"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "stack": 4
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "3": {
+            "description": "Encounter Start: For every ally fielded, inflict 2 Tremor Potency and Count to all enemies.\nOn Hit: If the dice used was Envy Affinity, inflict 4 Tremor Potency",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "limit_per_encounter": 1,
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {},
+                    "get": {},
+                    "modifiers": {
+                        "storagebox": [
+                            {
+                                "name": "Playercount",
+                                "valuename": "Playercount",
+                                "value": 2,
+                                "mode": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "trigger": "newturn",
+                    "limit_per_encounter": 1,
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "filterfaction": [
+                        "Enemy"
+                    ],
+                    "condition": {},
+                    "get": {
+                        "get": {
+                            "StorageBox": [
+                                {
+                                    "name": "Playercount",
+                                    "valuename": "Playercount"
+                                }
+                            ]
+                        }
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "stack": "SB_Playercount",
+                                "count": "SB_Playercount"
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "on_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "target",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "dice_sin": [
+                            "Envy"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "stack": 4
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "Green Spirit": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 1,
+        "cost": 145,
+        "level": 1,
+        "recipe": {
+            "Gluttony": 3,
+            "Sloth": 5
+        },
+        "1": {
+            "description": "On Hit: If the dice used was Gluttony Affinity, or if the target is Staggered, inflict 2 Tremor Potency to 2 random enemies",
+            "effects": [
+                {
+                    "trigger": "when_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "random2",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Enemy"
+                        ],
+                        "ifstaggered": true
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "stack": 2
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "when_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "random3",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Enemy"
+                        ],
+                        "ifstaggered": false,
+                        "dice_sin": [
+                            "Gluttony"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "stack": 2
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "On Hit: If the dice used was Gluttony Affinity, or if the target is Staggered, inflict 2 Tremor Potency to 3 random enemies",
+            "effects": [
+                {
+                    "trigger": "when_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "random3",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Enemy"
+                        ],
+                        "ifstaggered": true
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "stack": 2
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "when_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "random3",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Enemy"
+                        ],
+                        "ifstaggered": false,
+                        "dice_sin": [
+                            "Gluttony"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "stack": 2
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "3": {
+            "description": "On Hit: If the dice used was Gluttony Affinity, or if the target is Staggered, inflict 4 Tremor Potency to 3 random enemies",
+            "effects": [
+                {
+                    "trigger": "when_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "random3",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Enemy"
+                        ],
+                        "ifstaggered": true
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "stack": 4
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "when_hit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "random3",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Enemy"
+                        ],
+                        "ifstaggered": false,
+                        "dice_sin": [
+                            "Gluttony"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "stack": 4
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "Gemstone Oscillator": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 1,
+        "cost": 105,
+        "level": 1,
+        "recipe": {
+            "Gloom": 2,
+            "Sloth": 4
+        },
+        "1": {
+            "description": "On Clash Win: If the target does not have Tremor, inflict +3 Tremor Count",
+            "effects": [
+                {
+                    "trigger": "clash_lose",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Enemy"
+                        ],
+                        "count_max": {
+                            "buff": "Tremor",
+                            "value": 0
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "count": 3
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "On Clash Win: If the target has less than 4 Tremor Count, inflict +4 Tremor Count",
+            "effects": [
+                {
+                    "trigger": "clash_lose",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Enemy"
+                        ],
+                        "count_max": {
+                            "buff": "Tremor",
+                            "value": 4
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "count": 4
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "3": {
+            "description": "On Clash Win: If the target has less than 6 Tremor Count, inflict +4 Tremor Count",
+            "effects": [
+                {
+                    "trigger": "clash_lose",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Enemy"
+                        ],
+                        "count_max": {
+                            "buff": "Tremor",
+                            "value": 6
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "count": 4
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "Sour Liquid Aroma": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 2,
+        "cost": 217,
+        "recipe": {
+            "Pride": 4,
+            "Gloom": 4,
+            "Sloth": 4
+        },
+        "hiderecipe": true,
+        "level": 1,
+        "1": {
+            "description": "On Use: If the target has 8+ Tremor Potency, consume 2 Tremor Potency to apply 1 Attack Power Up next turn to a random ally (Max once per turn)",
+            "effects": [
+                {
+                    "trigger": "on_use",
+                    "conditionTarget": "target",
+                    "modifierTarget": "random1",
+                    "limit_per_turn": 1,
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Enemy"
+                        ],
+                        "stack_min": {
+                            "buff": "Tremor",
+                            "value": 8
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Attack Power Up": {
+                                "stack": 1,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Melty Eyeball": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 3,
+        "cost": 305,
+        "recipe": {
+            "Gloom": 10
+        },
+        "hiderecipe": true,
+        "level": 1,
+        "1": {
+            "description": "On Tremor Burst: Gain 1 Bruise next turn (Max 3 times per enemy per turn)",
+            "effects": [
+                {
+                    "trigger": "on_burst",
+                    "conditionTarget": "self",
+                    "modifierTarget": "target",
+                    "limit_per_turn": 3,
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Bruise": {
+                                "stack": 1,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Downpour": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 4,
+        "cost": 481,
+        "recipe": {
+            "Pride": 4,
+            "Lust": 2,
+            "Envy": 2,
+            "Gloom": 6,
+            "Sloth": 6,
+            "Gluttony": 2,
+            "Wrath": 4
+        },
+        "hiderecipe": true,
+        "level": 1,
+        "1": {
+            "description": "Turn Start: Gain 4 Tremor Potency and Count next turn, then trigger 1 Tremor Burst",
+            "effects": [
+                {
+                    "trigger": "truenewturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Enemy"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "stack": 4,
+                                "count": 4,
+                                "nextturn": true,
+                                "volatile": false
+                            },
+                            "tremorburst": 1
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "Turn Start: Gain 4 Tremor Potency and Count next turn, then trigger 2 Tremor Bursts",
+            "effects": [
+                {
+                    "trigger": "truenewturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Enemy"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "stack": 4,
+                                "count": 4,
+                                "nextturn": true,
+                                "volatile": false
+                            },
+                            "tremorburst": 2
+                        }
+                    }
+                }
+            ]
+        },
+        "3": {
+            "description": "Turn Start: Gain 6 Tremor Potency and Count next turn, then trigger 2 Tremor Bursts",
+            "effects": [
+                {
+                    "trigger": "truenewturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Enemy"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Tremor": {
+                                "stack": 6,
+                                "count": 6,
+                                "nextturn": true,
+                                "volatile": false
+                            },
+                            "tremorburst": 2
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "Curriculum Vitae": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 1,
+        "cost": 110,
+        "level": 1,
+        "recipe": {
+            "Gloom": 3,
+            "Envy": 5
+        },
+        "1": {
+            "description": "Turn Start: If this unit has 8+ Charge Count, gain 1 Haste next turn",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_min": {
+                            "buff": "Charge",
+                            "value": 8
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Haste": {
+                                "stack": 1,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "Turn Start: If this unit has 8+ Charge Count, gain 2 Haste next turn",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_min": {
+                            "buff": "Charge",
+                            "value": 8
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Haste": {
+                                "stack": 2,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "3": {
+            "description": "Turn Start: If this unit has 6+ Charge Count, gain 2 Haste and 1 Power Up next turn",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_min": {
+                            "buff": "Charge",
+                            "value": 6
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Haste": {
+                                "stack": 2,
+                                "nextturn": true,
+                                "volatile": true
+                            },
+                            "Power Up": {
+                                "stack": 1,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "Wrist Guards": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 1,
+        "cost": 139,
+        "level": 1,
+        "recipe": {
+            "Pride": 2,
+            "Envy": 5
+        },
+        "1": {
+            "description": "Turn Start: At 5+ Charge Count, and if this unit has less than 5 pages in hand, draw 2 pages",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_min": {
+                            "buff": "Charge",
+                            "value": 5
+                        },
+                        "hand_max": {
+                            "value": 5
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "draw": 2
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "UPS System": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 1,
+        "cost": 139,
+        "level": 1,
+        "recipe": {
+            "Wrath": 2,
+            "Envy": 5
+        },
+        "1": {
+            "description": "Turn Start: At less than 4+ Charge Count, gain 4 Charge Count next turn. Otherwise, gain 2 Defense Power Up next turn",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_min": {
+                            "buff": "Charge",
+                            "value": 4
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Defense Power Up": {
+                                "count": 2,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_max": {
+                            "buff": "Charge",
+                            "value": 4
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Charge": {
+                                "count": 4,
+                                "nextturn": true,
+                                "volatile": false
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Uncapped Defibrelator": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 2,
+        "cost": 210,
+        "level": 1,
+        "recipe": {
+            "Gluttony": 3,
+            "Pride": 4,
+            "Envy": 5
+        },
+        "1": {
+            "description": "After using a Combat Page: At 12+ Charge Count on self, and if this unit is below 75% HP, consume 4 Charge Count on self to heal (Charge Count Consumed * 2) HP",
+            "effects": [
+                {
+                    "trigger": "after_attack",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_min": {
+                            "buff": "Charge",
+                            "value": 12
+                        },
+                        "hp_max%": 75
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "takehpdamage": -8,
+                        "getbuff": {
+                            "Charge": {
+                                "count": -4
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "After using a Combat Page: At 12+ Charge Count on self, and if this unit is below 75% HP, consume 4 Charge Count on self to heal (Charge Count Consumed * 3) HP",
+            "effects": [
+                {
+                    "trigger": "after_attack",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_min": {
+                            "buff": "Charge",
+                            "value": 12
+                        },
+                        "hp_max%": 75
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "takehpdamage": -12,
+                        "getbuff": {
+                            "Charge": {
+                                "count": -4
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "3": {
+            "description": "After using a Combat Page: At 12+ Charge Count on self, and if this unit is below 75% HP, consume 4 Charge Count on self to heal (Charge Count Consumed * 4) HP and gain 2 Power Up next turn",
+            "effects": [
+                {
+                    "trigger": "after_attack",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_min": {
+                            "buff": "Charge",
+                            "value": 12
+                        },
+                        "hp_max%": 75
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "takehpdamage": -16,
+                        "getbuff": {
+                            "Charge": {
+                                "count": -6
+                            },
+                            "Power Up": {
+                                "stack": 2,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "Portable Battery Socket": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 2,
+        "cost": 210,
+        "level": 1,
+        "recipe": {
+            "Sloth": 3,
+            "Gluttony": 2,
+            "Envy": 5
+        },
+        "1": {
+            "description": "Turn Start: 2 random players gain +2 Charge Count next turn\nWhenever a player uses a combat page, if that page was Sloth or Pride Affinity, apply +1 Charge Count next turn to all allies",
+            "effects": [
+                {
+                    "trigger": "truenewturn",
+                    "conditionTarget": "self",
+                    "modifierTarget": "random2",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Charge": {
+                                "count": 2,
+                                "nextturn": true
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "on_use",
+                    "conditionTarget": "self",
+                    "modifierTarget": "everyone",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "dice_sin": [
+                            "Sloth"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Charge": {
+                                "count": 1,
+                                "nextturn": true
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "on_use",
+                    "conditionTarget": "self",
+                    "modifierTarget": "everyone",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "dice_sin": [
+                            "Pride"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Charge": {
+                                "count": 1,
+                                "nextturn": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Patrolling Flashlight": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 2,
+        "cost": 220,
+        "level": 1,
+        "recipe": {
+            "Envy": 10
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "Turn Start: If this unit has Charge and does not have Charge Barrier, gain 2 Charge Barrier next turn",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_min": {
+                            "buff": "Charge",
+                            "value": 1
+                        },
+                        "count_max": {
+                            "buff": "Charge Barrier",
+                            "value": 0
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Charge Barrier": {
+                                "stack": 2,
+                                "nextturn": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "Turn Start: If this unit has Charge and does not have Charge Barrier, gain 3 Charge Barrier next turn",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_min": {
+                            "buff": "Charge",
+                            "value": 0
+                        },
+                        "count_max": {
+                            "buff": "Charge Barrier",
+                            "value": 0
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Charge Barrier": {
+                                "stack": 3,
+                                "nextturn": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "3": {
+            "description": "Turn Start: If this unit has Charge and does not have Charge Barrier, gain 5 Charge Barrier next turn",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_min": {
+                            "buff": "Charge",
+                            "value": 0
+                        },
+                        "count_max": {
+                            "buff": "Charge Barrier",
+                            "value": 0
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Charge Barrier": {
+                                "stack": 5,
+                                "nextturn": true
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "Employee Card": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 2,
+        "cost": 239,
+        "level": 1,
+        "recipe": {
+            "Wrath": 4,
+            "Envy": 6
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "Turn Start: Gain +3 Charge Count next turn",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Charge": {
+                                "count": 3,
+                                "nextturn": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Miniature Telepole": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 2,
+        "cost": 261,
+        "level": 1,
+        "recipe": {
+            "Pride": 2,
+            "Envy": 8
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "On Kill: If this unit has Charge, apply 5 Charge Count to all allies next turn",
+            "effects": [
+                {
+                    "trigger": "on_kill",
+                    "conditionTarget": "self",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_min": {
+                            "buff": "Charge",
+                            "value": 1
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Charge": {
+                                "count": 5,
+                                "nextturn": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "T-1B Octagonal Bolt": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 2,
+        "cost": 261,
+        "level": 1,
+        "recipe": {
+            "Pride": 2,
+            "Envy": 8
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "Turn Start: Gain (Charge Count / 7) Damage Up next turn\nTurn Start: If this unit does not have Charge Barrier, gain 1 Charge Barrier",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {
+                        "Charge": {
+                            "value": "count",
+                            "max": 2,
+                            "mult": 7,
+                            "fix": "",
+                            "targetOverride": "self"
+                        }
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Damage Up": {
+                                "stack": "Charge_count",
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_max": {
+                            "buff": "Charge Barrier",
+                            "value": 0
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Charge Barrier": {
+                                "stack": 1,
+                                "nextturn": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "Turn Start: Gain (Charge Count / 5) Damage Up next turn\nTurn Start: If this unit does not have Charge Barrier, gain 1 Charge Barrier",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {
+                        "Charge": {
+                            "value": "count",
+                            "max": 2,
+                            "mult": 5,
+                            "fix": "",
+                            "targetOverride": "self"
+                        }
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Damage Up": {
+                                "stack": "Charge_count",
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_max": {
+                            "buff": "Charge Barrier",
+                            "value": 0
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Charge Barrier": {
+                                "stack": 1,
+                                "nextturn": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "3": {
+            "description": "Turn Start: Gain (Charge Count / 5) Damage Up next turn\nTurn Start: If this unit does not have Charge Barrier, gain 3 Charge Barrier",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {
+                        "Charge": {
+                            "value": "count",
+                            "max": 2,
+                            "mult": 5,
+                            "fix": "",
+                            "targetOverride": "self"
+                        }
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Damage Up": {
+                                "stack": "Charge_count",
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_max": {
+                            "buff": "Charge Barrier",
+                            "value": 0
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Charge Barrier": {
+                                "stack": 3,
+                                "nextturn": true
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "Material Interference Force Field": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 3,
+        "cost": 325,
+        "level": 1,
+        "recipe": {
+            "Envy": 5,
+            "Wrath": 6,
+            "Gloom": 2,
+            "Sloth": 10
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "Encounter Start: All allies gain 3 Charge Barrier",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "limit_per_encounter": 1,
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Charge Barrier": {
+                                "stack": 5
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Initative Generator": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 3,
+        "cost": 325,
+        "level": 1,
+        "recipe": {
+            "Envy": 5,
+            "Wrath": 6,
+            "Gloom": 2,
+            "Sloth": 10
+        },
+        "1": {
+            "description": "On Use: Units with Charge Count gain Max Dice Power +(Charge Count on self / 7). If the page used had a Light Cost of 3 or more, Dice Power +1",
+            "effects": [
+                {
+                    "trigger": "on_use",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_min": {
+                            "buff": "Charge",
+                            "value": 7
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "changedice": {
+                            "dice": "all",
+                            "boostmax": 1
+                        }
+                    }
+                },
+                {
+                    "trigger": "on_use",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_min": {
+                            "buff": "Charge",
+                            "value": 7
+                        },
+                        "lightcost_min": 3
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "power_bonus": 1
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Pendant of Nostalgia": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 1,
+        "cost": 100,
+        "level": 1,
+        "recipe": {
+            "Gloom": 5,
+            "Pride": 2
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "Turn Start: 1 random ally gains 3 Poise Potency\nClash Win: If the dice was Gloom Affinity, gain 3 Poise and 2 Poise Count",
+            "effects": [
+                {
+                    "trigger": "truenewturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Poise": {
+                                "stack": 3
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "clash_win",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "dice_sin": [
+                            "Gloom"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Poise": {
+                                "stack": 3,
+                                "count": 2
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Devil's Share": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 1,
+        "cost": 133,
+        "level": 1,
+        "recipe": {
+            "Lust": 4,
+            "Pride": 8
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "Turn Start: 1 ally with the highest Poise gains 1 Poise Count, 1 Haste and 1 Damage up next turn\n\nClash Win: If the ally with the highest Poise wins a Clash using a Lust Affinity Dice, they gain 1 Haste next turn (Max 2 times per turn)",
+            "effects": [
+                {
+                    "trigger": "truenewturn",
+                    "conditionTarget": "highest_Poise_stack",
+                    "modifierTarget": "highest_Poise_stack",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {},
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Poise": {
+                                "count": 1,
+                                "nextturn": true
+                            },
+                            "Haste": {
+                                "stack": 1,
+                                "nextturn": true,
+                                "volatile": true
+                            },
+                            "Damage Up": {
+                                "stack": 1,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "clash_win",
+                    "conditionTarget": "highest_Poise_stack",
+                    "modifierTarget": "highest_Poise_stack",
+                    "limit_per_turn": 2,
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {
+                        "dice_sin": [
+                            "Lust"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Haste": {
+                                "stack": 1,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "Turn Start: 1 ally with the highest Poise gains 2 Poise Count, 1 Haste and 1 Damage up next turn\n\nClash Win: If the ally with the highest Poise wins a Clash using a Lust Affinity Dice, they gain 1 Haste next turn (Max 3 times per turn)",
+            "effects": [
+                {
+                    "trigger": "truenewturn",
+                    "conditionTarget": "highest_Poise_stack",
+                    "modifierTarget": "highest_Poise_stack",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {},
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Poise": {
+                                "count": 2,
+                                "nextturn": true
+                            },
+                            "Haste": {
+                                "stack": 1,
+                                "nextturn": true,
+                                "volatile": true
+                            },
+                            "Damage Up": {
+                                "stack": 1,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "clash_win",
+                    "conditionTarget": "highest_Poise_stack",
+                    "modifierTarget": "highest_Poise_stack",
+                    "limit_per_turn": 3,
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {
+                        "dice_sin": [
+                            "Lust"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Haste": {
+                                "stack": 1,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "3": {
+            "description": "Turn Start: 1 ally with the highest Poise gains 2 Poise Count, 2 Haste and 2 Damage up next turn\n\nClash Win: If the ally with the highest Poise wins a Clash using a Lust Affinity Dice, they gain 1 Haste next turn (Max 3 times per turn)",
+            "effects": [
+                {
+                    "trigger": "truenewturn",
+                    "conditionTarget": "highest_Poise_stack",
+                    "modifierTarget": "highest_Poise_stack",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {},
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Poise": {
+                                "count": 2,
+                                "nextturn": true
+                            },
+                            "Haste": {
+                                "stack": 2,
+                                "nextturn": true,
+                                "volatile": true
+                            },
+                            "Damage Up": {
+                                "stack": 2,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "clash_win",
+                    "conditionTarget": "highest_Poise_stack",
+                    "modifierTarget": "highest_Poise_stack",
+                    "limit_per_turn": 3,
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {
+                        "dice_sin": [
+                            "Lust"
+                        ]
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Haste": {
+                                "stack": 1,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "Emerald Elytra": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 1,
+        "cost": 120,
+        "level": 1,
+        "recipe": {
+            "Envy": 5,
+            "Pride": 5
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "Turn Start: 1 fastest ally gains 3 Poise Potency next turn. If they have 10+ Poise, draw 1 page",
+            "effects": [
+                {
+                    "trigger": "truenewturn",
+                    "conditionTarget": "highest_speed",
+                    "modifierTarget": "highest_speed",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {},
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Poise": {
+                                "stack": 3,
+                                "nextturn": true
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "truenewturn",
+                    "conditionTarget": "highest_speed",
+                    "modifierTarget": "highest_speed",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {
+                        "stack_min": {
+                            "buff": "Poise",
+                            "value": 8
+                        }
+                    },
+                    "get": {},
+                    "modifiers": {
+                        "draw": 1
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Ornamental Horseshoe": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 2,
+        "cost": 250,
+        "level": 1,
+        "recipe": {
+            "Wrath": 6,
+            "Pride": 8
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "Encounter Start: All allies gain 4 Poise and +4 Poise Count",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "limit_per_encounter": 1,
+                    "get": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Poise": {
+                                "stack": 4,
+                                "count": 4
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Cigarette Holder": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 2,
+        "cost": 201,
+        "level": 1,
+        "recipe": {
+            "Lust": 5,
+            "Pride": 10
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "If this unit has Poise, gain 1 Clash Power Up\nAt 6+ Poise, gain 2 Clash Power up instead",
+            "effects": [
+                {
+                    "trigger": "on_roll",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_min": {
+                            "buff": "Poise",
+                            "value": 1
+                        },
+                        "pageusetype": [
+                            "Clash"
+                        ]
+                    },
+                    "modifiers": {
+                        "power_bonus": 1
+                    }
+                },
+                {
+                    "trigger": "on_roll",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "count_min": {
+                            "buff": "Poise",
+                            "value": 6
+                        },
+                        "pageusetype": [
+                            "Clash"
+                        ]
+                    },
+                    "modifiers": {
+                        "power_bonus": 1
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Nebulizer": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 2,
+        "cost": 200,
+        "level": 1,
+        "recipe": {
+            "Pride": 16
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "Upon rolling a Pride Dice, apply 1 Poise and Poise Count next turn to a random ally (Max 10 times per turn)",
+            "effects": [
+                {
+                    "trigger": "on_roll",
+                    "conditionTarget": "self",
+                    "modifierTarget": "random1",
+                    "limit_per_turn": 10,
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {
+                        "dice_sin": [
+                            "Pride"
+                        ]
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Poise": {
+                                "stack": 1,
+                                "count": 1,
+                                "nextturn": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Four-leaf Clover": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 3,
+        "cost": 251,
+        "level": 1,
+        "recipe": {
+            "Gluttony": 4,
+            "Pride": 10
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "On Crit: Gain 5 Poise Potency and 2 Poise Count next turn. If the Dice used to crit was Gluttony, gain 7 Poise Potency and 3 Poise Count instead (Max one times per turn)",
+            "effects": [
+                {
+                    "trigger": "on_crit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "limit_per_turn": 1,
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Poise": {
+                                "stack": 5,
+                                "count": 2,
+                                "nextturn": true
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "on_crit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "dice_sin": [
+                            "Gluttony"
+                        ]
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Poise": {
+                                "stack": 2,
+                                "count": 1,
+                                "nextturn": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Endorphin Kit": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 3,
+        "cost": 251,
+        "level": 1,
+        "recipe": {
+            "Envy": 4,
+            "Lust": 2,
+            "Pride": 10
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "On Crit: Gain 1 Poise Potency and 1 Poise Count\nIf the Dice used was Envy instead, also apply 1 Poise and Poise Count to a random ally",
+            "effects": [
+                {
+                    "trigger": "on_crit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "limit_per_turn": 1,
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ]
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Poise": {
+                                "stack": 1,
+                                "count": 1
+                            }
+                        }
+                    }
+                },
+                {
+                    "trigger": "on_crit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "random1",
+                    "condition": {
+                        "absolutefactioncheck": [
+                            "Player"
+                        ],
+                        "dice_sin": [
+                            "Envy"
+                        ]
+                    },
+                    "modifiers": {
+                        "getbuff": {
+                            "Poise": {
+                                "stack": 1,
+                                "count": 1
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "",
+            "effects": []
+        },
+        "3": {
+            "description": "",
+            "effects": []
+        }
+    },
+    "Clear Mirror, Calm Water": {
+        "acquired": false,
+        "upgrade": false,
+        "tier": 4,
+        "cost": 421,
+        "level": 1,
+        "recipe": {
+            "Envy": 5,
+            "Lust": 5,
+            "Wrath": 5,
+            "Pride": 15
+        },
+        "hiderecipe": true,
+        "1": {
+            "description": "Increases ally crit damage by +50%\nOn Crit: Gain 1 Clash Power Up next turn",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {},
+                    "modifiers": {
+                        "storagebox": [
+                            {
+                                "name": "self",
+                                "valuename": "critdamagemult",
+                                "value": 50,
+                                "mode": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "trigger": "on_crit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Clash Power Up": {
+                                "stack": 1,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "2": {
+            "description": "Increases ally crit damage by +80%\nOn Crit: Gain 1 Clash Power Up next turn",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {},
+                    "modifiers": {
+                        "storagebox": [
+                            {
+                                "name": "self",
+                                "valuename": "critdamagemult",
+                                "value": 80,
+                                "mode": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "trigger": "on_crit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Clash Power Up": {
+                                "stack": 1,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        "3": {
+            "description": "Increases ally crit damage by +130%\nOn Crit: Gain 2 Clash Power Up next turn",
+            "effects": [
+                {
+                    "trigger": "newturn",
+                    "conditionTarget": "everyone",
+                    "modifierTarget": "everyone",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {},
+                    "modifiers": {
+                        "storagebox": [
+                            {
+                                "name": "self",
+                                "valuename": "critdamagemult",
+                                "value": 130,
+                                "mode": "add"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "trigger": "on_crit",
+                    "conditionTarget": "self",
+                    "modifierTarget": "self",
+                    "filterfaction": [
+                        "Player"
+                    ],
+                    "condition": {},
+                    "modifiers": {
+                        "getbuff": {
+                            "Clash Power Up": {
+                                "stack": 2,
+                                "nextturn": true,
+                                "volatile": true
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
