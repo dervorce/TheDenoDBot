@@ -1,0 +1,1 @@
+ProfileMan = None # defined as a global variable

@@ -1,0 +1,1 @@
+flyctl ssh console -a denopmttrpgbot
