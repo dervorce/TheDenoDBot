@@ -1,0 +1,1194 @@
+{
+    "Offense Level Up": {
+        "description": "Offense Level +X",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "earliest_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Offense Level Up": {
+                        "value": "stack",
+                        "mult": 100,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "setoffenselevel": {
+                        "source": "OffenseLevelUpBuff",
+                        "value": "Offense Level Up_stack"
+                    }
+                }
+            }
+        ]
+    },
+    "Defense Level Up": {
+        "description": "Defense Level +X",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "earliest_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Defense Level Up": {
+                        "value": "stack",
+                        "mult": 100,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "setdefenselevel": {
+                        "source": "DefenseLevelUpBuff",
+                        "value": "Defense Level Up_stack"
+                    }
+                }
+            }
+        ]
+    },
+    "Defense Level Down": {
+        "description": "Defense Level -X",
+        "type": "Neg",
+        "effects": [
+            {
+                "trigger": "earliest_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Defense Level Down": {
+                        "value": "stack",
+                        "mult": -100,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "setdefenselevel": {
+                        "source": "DefenseLevelDownBuff",
+                        "value": "Defense Level Down_stack"
+                    }
+                }
+            }
+        ]
+    },
+    "Lights Out": {
+        "description": "",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Lights Out": {
+                            "stack": -1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Overstimulated": {
+        "description": "Max 3. When this unit has this status effect; inflict +1 additional Burn and gain +1 Charge  Count with page effects. When first gaining this status effect, draw the page “Bomb Disposal!”. If the unit has “Bomb Disposal!” before this status effect runs out, use “IT’S GONNA BLOW!!” next scene.",
+        "type": "Pos",
+        "max_stack": 3,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "stack_max": {
+                        "buff": "Overstimulated",
+                        "value": 1
+                    },
+                    "stack_min": {
+                        "buff": "Overstimulated",
+                        "value": 1
+                    },
+                    "hand_check": "Bomb Disposal"
+                },
+                "modifiers": {
+                    "draw": "'IT'S GONNA BLOW!!'"
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Overstimulated": {
+                            "stack": -1
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Burn": {
+                            "stack": 1
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": 1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "ThornArrow": {
+        "description": "Unique Ammo, Max 10. Only consumed by certain pages. Doesn't decay.\n",
+        "type": "Pos",
+        "max_stack": 10,
+        "effects": []
+    },
+    "Poison": {
+        "description": "Max 10. When the user with this status effect Restores Light, take damage equal to stack and then halve stack on self. Once the user gains this status, it cannot be regained until all the stacks are expired",
+        "type": "Neg",
+        "max_stack": 10,
+        "effects": [
+            {
+                "trigger": "new_turn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Poison": {
+                        "value": "stack",
+                        "max": 10,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "poisonOnSelf",
+                            "value": "Poison_stack",
+                            "mode": "set"
+                        }
+                    ]
+                }
+            },
+            {
+                "trigger": "ongain_Poison",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "poisonOnSelf"
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "setbuff": {
+                        "Poison": {
+                            "stack": "SB_poisonOnSelf"
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "on_lightgain",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "poisonOnSelf"
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "takehpdamage": "SB_poisonOnSelf"
+                }
+            },
+            {
+                "trigger": "on_lightgain",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "StorageBox": [
+                        {
+                            "name": "self",
+                            "valuename": "poisonOnSelf",
+                            "divide": 2
+                        }
+                    ]
+                },
+                "modifiers": {
+                    "setbuff": {
+                        "Poison": {
+                            "stack": "SB_poisonOnSelf"
+                        }
+                    },
+                    "storagebox": [
+                        {
+                            "name": "self",
+                            "valuename": "ammoconsumed",
+                            "value": "SB_poisonOnSelf",
+                            "mode": "set"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "Attack Power Up": {
+        "description": "Increases power of offensive dice.",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "dice_type": [
+                        "slash",
+                        "pierce",
+                        "blunt"
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus_per_stack": 1
+                }
+            }
+        ]
+    },
+    "Power Up": {
+        "description": "Increases power of dice.",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "power_bonus_per_stack": 1
+                }
+            }
+        ]
+    },
+    "Power Down": {
+        "description": "Decreases power of dice.",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "power_bonus_per_stack": -1
+                }
+            }
+        ]
+    },
+    "Attack Power Down": {
+        "description": "Decreases power of offensive dice.",
+        "type": "Neg",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "dice_type": [
+                        "slash",
+                        "pierce",
+                        "blunt"
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus_per_stack": -1
+                }
+            }
+        ]
+    },
+    "Defense Power Up": {
+        "description": "Increases power of Defensive dice.",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "dice_type": [
+                        "guard",
+                        "evade"
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus_per_stack": 1
+                }
+            }
+        ]
+    },
+    "Defense Power Down": {
+        "description": "Decreases power of Defensive dice.",
+        "type": "Neg",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "dice_type": [
+                        "guard",
+                        "evade"
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus_per_stack": -1
+                }
+            }
+        ]
+    },
+    "Clash Power Down": {
+        "description": "Decreases power in a Clash.",
+        "type": "Neg",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "pageusetype": [
+                        "Clash"
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus_per_stack": -1
+                }
+            }
+        ]
+    },
+    "Paralyze": {
+        "description": "Decreases power of dice.",
+        "type": "Neg",
+        "effects": [
+            {
+                "trigger": "before_on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "minroll": 100
+                },
+                "modifiers": {
+                    "setpowerunlocked": "minroll"
+                }
+            },
+            {
+                "trigger": "before_on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Paralyze": {
+                            "stack": -1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Bruise": {
+        "description": "All dice lose power equal to stack, every roll lose hp equal to stack",
+        "type": "Neg",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Bruise": {
+                        "value": "stack"
+                    }
+                },
+                "modifiers": {
+                    "power_bonus_per_stack": -1,
+                    "takehpdamage": "Bruise_stack"
+                }
+            }
+        ]
+    },
+    "Haste": {
+        "description": "Increases speed.",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "speed_bonus_per_stack": 1
+                }
+            }
+        ]
+    },
+    "Bind": {
+        "description": "Decreases speed.",
+        "type": "Neg",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "speed_bonus_per_stack": -1
+                }
+            }
+        ]
+    },
+    "Burn": {
+        "description": "At end of turn, take fixed damage equal to stack. Then reduce count by 1.",
+        "type": "Neg",
+        "countable": true,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Burn": {
+                        "value": "stack",
+                        "mult": 50,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "takehpdamage": "Burn_stack"
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Burn",
+                        "value": 2
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Burn": {
+                            "count": -1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Tremor": {
+        "description": "When attacked by skills that cause Tremor Burst, deal stagger damage equal to Potency. If the target is staggered, excess damage lowers maximum SR of the target. At the end of the turn, reduce count by 1. ",
+        "countable": true,
+        "type": "Neg",
+        "effects": [
+            {
+                "trigger": "when_burst",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Tremor": {
+                        "value": "stack",
+                        "fix": "",
+                        "mult": 50
+                    }
+                },
+                "modifiers": {
+                    "takestaggerdamage": "Tremor_stack"
+                }
+            },
+            {
+                "trigger": "when_burst",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "ifstaggered": true
+                },
+                "get": {
+                    "Tremor": {
+                        "value": "stack",
+                        "fix": "",
+                        "mult": 20
+                    }
+                },
+                "modifiers": {
+                    "takehpdamage": "Tremor_stack"
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Tremor": {
+                            "count": -1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Rupture": {
+        "description": "When attacked take damage equal to Potency then lower count by 1",
+        "countable": true,
+        "type": "Neg",
+        "effects": [
+            {
+                "trigger": "when_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Rupture",
+                        "value": 3
+                    }
+                },
+                "get": {
+                    "Rupture": {
+                        "value": "stack",
+                        "mult": 34,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "takehpdamage": "Rupture_stack",
+                    "getbuff": {
+                        "Rupture": {
+                            "count": -1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Sinking": {
+        "description": "When attacked take (X / 3) stagger damage, then lower count by 1",
+        "countable": true,
+        "type": "Neg",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "stack_min": {
+                        "buff": "Sinking",
+                        "value": 3
+                    }
+                },
+                "get": {
+                    "Sinking": {
+                        "value": "stack",
+                        "mult": 34,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "takestaggerdamage": "Sinking_stack",
+                    "getbuff": {
+                        "Sinking": {
+                            "count": -1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Bleed": {
+        "description": "When rolling a die take damage equal to Potency then lower count by 1",
+        "countable": true,
+        "type": "Neg",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "dice_type": [
+                        "slash",
+                        "pierce",
+                        "blunt"
+                    ],
+                    "stack_min": {
+                        "buff": "Bleed",
+                        "value": 3
+                    }
+                },
+                "get": {
+                    "Bleed": {
+                        "value": "stack",
+                        "mult": 34,
+                        "fix": ""
+                    }
+                },
+                "modifiers": {
+                    "takehpdamage": "Bleed_stack",
+                    "getbuff": {
+                        "Bleed": {
+                            "count": -1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Charge": {
+        "description": "Bum ahh status effect",
+        "countable": true,
+        "type": "Pos",
+        "max_stack": 20,
+        "max_count": 20,
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Charge": {
+                            "count": -1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Ammo": {
+        "description": "Bum ahh status effect",
+        "type": "Pos",
+        "max_stack": 20,
+        "effects": []
+    },
+    "Black Belt": {
+        "description": "Bum ahh status effect",
+        "max_stack": 5,
+        "type": "Pos",
+        "effects": []
+    },
+    "Poise": {
+        "description": "crits or sth idk i gave up on the descriptions no one sees them anyways",
+        "countable": true,
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "count": -1
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Poise": {
+                        "value": "stack",
+                        "mult": 500
+                    }
+                },
+                "modifiers": {
+                    "triggercrit": "Poise_stack"
+                }
+            },
+            {
+                "trigger": "on_crit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {},
+                "modifiers": {
+                    "getbuff": {
+                        "Poise": {
+                            "count": -1
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Stagger Protection": {
+        "description": "stagProtection",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "before_when_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Stagger Protection": {
+                        "value": "stack",
+                        "mult": -100
+                    }
+                },
+                "modifiers": {
+                    "changedamage": {
+                        "value": "Stagger Protection_stack",
+                        "stagger": true,
+                        "mode": "add"
+                    }
+                }
+            }
+        ]
+    },
+    "Protection": {
+        "description": "Protection",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "before_when_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Protection": {
+                        "value": "stack",
+                        "mult": -100
+                    }
+                },
+                "modifiers": {
+                    "changedamage": {
+                        "value": "Protection_stack",
+                        "mode": "add"
+                    }
+                }
+            },
+            {
+                "trigger": "before_when_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Protection": {
+                        "value": "stack",
+                        "mult": -100
+                    }
+                },
+                "modifiers": {
+                    "changedamage": {
+                        "value": "Protection_stack",
+                        "mode": "add",
+                        "stagger": true
+                    }
+                }
+            }
+        ]
+    },
+    "Fragile": {
+        "description": "stagFrag",
+        "type": "Neg",
+        "effects": [
+            {
+                "trigger": "before_when_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Fragile": {
+                        "value": "stack",
+                        "mult": 100
+                    }
+                },
+                "modifiers": {
+                    "changedamage": {
+                        "value": "Fragile_stack",
+                        "stagger": false,
+                        "mode": "add"
+                    }
+                }
+            }
+        ]
+    },
+    "Pierce Fragility": {
+        "description": "stagFrag",
+        "type": "Neg",
+        "effects": [
+            {
+                "trigger": "before_when_hit",
+                "conditionTarget": "target",
+                "modifierTarget": "self",
+                "condition": {
+                    "dice_type": [
+                        "pierce"
+                    ]
+                },
+                "get": {
+                    "Pierce Fragility": {
+                        "value": "stack",
+                        "mult": 100
+                    }
+                },
+                "modifiers": {
+                    "changedamage": {
+                        "value": "Pierce Fragility_stack",
+                        "stagger": false,
+                        "mode": "add"
+                    }
+                }
+            }
+        ]
+    },
+    "Pierce Damage Up": {
+        "description": "On Hit: Inflict X bonus damage",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {
+                    "dice_type": [
+                        "pierce"
+                    ]
+                },
+                "get": {
+                    "Pierce Damage Up": {
+                        "value": "stack",
+                        "mult": 100
+                    }
+                },
+                "modifiers": {
+                    "changedamage": {
+                        "value": "Pierce Damage Up_stack",
+                        "mode": "add"
+                    }
+                }
+            }
+        ]
+    },
+    "Stagger Fragility": {
+        "description": "stagFrag",
+        "type": "Neg",
+        "effects": [
+            {
+                "trigger": "before_when_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "Stagger Fragility": {
+                        "value": "stack",
+                        "mult": 100
+                    }
+                },
+                "modifiers": {
+                    "changedamage": {
+                        "value": "Stagger Fragility_stack",
+                        "stagger": true,
+                        "mode": "add"
+                    }
+                }
+            }
+        ]
+    },
+    "Blunt Stagger Damage Up": {
+        "description": "man what the hell",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "get": {
+                    "Blunt Stagger Damage Up": {
+                        "value": "stack",
+                        "mult": 100
+                    }
+                },
+                "modifiers": {
+                    "changedamage": {
+                        "value": "Blunt Stagger Damage Up_stack",
+                        "stagger": true,
+                        "mode": "add",
+                        "type": [
+                            "blunt"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "Stagger Damage Up": {
+        "description": "man what the hell",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "get": {
+                    "Stagger Damage Up": {
+                        "value": "stack",
+                        "mult": 100
+                    }
+                },
+                "modifiers": {
+                    "changedamage": {
+                        "value": "Stagger Damage Up_stack",
+                        "stagger": true,
+                        "mode": "add"
+                    }
+                }
+            }
+        ]
+    },
+    "Blunt Stagger Damage Down": {
+        "description": "man what the hell",
+        "type": "Neg",
+        "effects": [
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "get": {
+                    "Blunt Stagger Damage Down": {
+                        "value": "stack",
+                        "mult": -100
+                    }
+                },
+                "modifiers": {
+                    "changedamage": {
+                        "value": "Blunt Stagger Damage Down_stack",
+                        "stagger": true,
+                        "mode": "add",
+                        "type": [
+                            "blunt"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "Charge Barrier": {
+        "description": "- Max Stack: 20\n- On Hit: Decrease HP and Stagger damage by X, then lower Potency by 1\n- Turn Start: Gain X Charge Count next turn, then lose all Potency",
+        "max_stack": 20,
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "before_when_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "ChargeBarrier": {
+                        "value": "stack",
+                        "mult": -100
+                    }
+                },
+                "modifiers": {
+                    "changedamage": {
+                        "value": "ChargeBarrier_stack",
+                        "mode": "add"
+                    }
+                }
+            },
+            {
+                "trigger": "before_when_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "ChargeBarrier": {
+                        "value": "stack",
+                        "mult": -100
+                    }
+                },
+                "modifiers": {
+                    "changedamage": {
+                        "value": "ChargeBarrier_stack",
+                        "mode": "add",
+                        "stagger": true
+                    },
+                    "getbuff": {
+                        "Charge Barrier": {
+                            "stack": -1
+                        }
+                    }
+                }
+            },
+            {
+                "trigger": "newturn",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {},
+                "get": {
+                    "ChargeBarrier": {
+                        "value": "stack",
+                        "mult": 100
+                    }
+                },
+                "modifiers": {
+                    "getbuff": {
+                        "Charge Barrier": {
+                            "stack": -99
+                        },
+                        "Charge": {
+                            "count": "ChargeBarrier_stack",
+                            "nextturn": true
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "Damage Up": {
+        "description": "On Hit: Inflict X bonus damage",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "before_on_hit",
+                "conditionTarget": "self",
+                "modifierTarget": "target",
+                "condition": {},
+                "get": {
+                    "Damage Up": {
+                        "value": "stack",
+                        "mult": 100
+                    }
+                },
+                "modifiers": {
+                    "changedamage": {
+                        "value": "Damage Up_stack",
+                        "mode": "add"
+                    }
+                }
+            }
+        ]
+    },
+    "Clash Power Up": {
+        "description": "Increases power in a Clash.",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "pageusetype": [
+                        "Clash"
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus_per_stack": 1
+                }
+            }
+        ]
+    },
+    "Lust Power Up": {
+        "description": "Increases power of lust dice.",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "dice_sin": [
+                        "Lust"
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus_per_stack": 1
+                }
+            }
+        ]
+    },
+    "Black Power Up": {
+        "description": "Increases power of black dice.",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "dice_sin": [
+                        "Black"
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus_per_stack": 1
+                }
+            }
+        ]
+    },
+    "White Power Up": {
+        "description": "Increases power of white dice.",
+        "type": "Pos",
+        "effects": [
+            {
+                "trigger": "on_roll",
+                "conditionTarget": "self",
+                "modifierTarget": "self",
+                "condition": {
+                    "dice_sin": [
+                        "White"
+                    ]
+                },
+                "modifiers": {
+                    "power_bonus_per_stack": 1
+                }
+            }
+        ]
+    }
+}
